@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>키엘 공식 온라인 몰</title>
+        <!-- normalize css -->
+        <link rel="stylesheet" href="common/normalize.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="common/swiper-bundle.min.css">
+        <!-- index style -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- font css -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <!-- 문단 말줄임 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.1.0/dotdotdot.js"></script>
+        <!-- swiper js -->
+        <script src="common/swiper-bundle.min.js"></script>
+        <!-- js -->
+        <script src="js/index.js"></script>
+
+        <!-- animation js -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="hamburgerMenu">
+                <div class="center"></div>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">제품 소개</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <h1><a href="index.html">kiehl's Logo</a></h1>
+            <a href="#"><img src="images/searchIcon.png" alt="search"></a>
+            <ul class="sub_gnb">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#"><img src="images/shoppingBag.png" alt="shoppingBag"></a></li>
+            </ul>
+        </header>
+        <aside>
+            <div class="first">
+                <ul class="category">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">제품 소개</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+                <ul class="member">
+                    <li><a href="#">로그인/회원가입</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="brand second">
+                <ul>
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                </ul>
+            </div>
+            <div class="prd second">
+                <ul>
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="#">베스트 셀러</a></li>
+                    <li><a href="#">스킨 케어</a></li>
+                    <li><a href="#">맨 케어</a></li>
+                    <li><a href="#">바디 & 헤어</a></li>
+                    <li><a href="#">반려동물</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="container">
+            <!-- 배너 -->
+            <section class="bannerSection swiper-container">
+                <ul class="banner swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="txt">
+                            <p class="bn_category">skincare</p>
+                            <h2>daily reviving concentrate face oil</h2>
+                            <p class="bn_explain">all skin types, including sensitive skin</p>
+                            <p class="kr_ex">피부를 하루 종일 빛나게 하는 항산화 페이스 오일</p>
+                            <div class="learnMore">learn more</div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="txt">
+                            <p class="bn_category">new arrival</p>
+                            <h2>calendula serum-infused<br>water cream</h2>
+                            <p class="bn_explain">all skin types, including sensitive skin</p>
+                            <p class="kr_ex">농축 된 칼렌듈라 세럼이 함유된 멀티 워터 크림</p>
+                            <div class="learnMore">learn more</div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="txt">
+                            <p class="bn_category">serum collection</p>
+                            <h2>face serum</h2>
+                            <p class="bn_explain">target lines, wrinkles or dehydration</p>
+                            <p class="kr_ex">주름, 피부톤, 볼륨, 탄력, 미백 등 피부 고민 해결을 위한 다양한 에센스</p>
+                            <div class="learnMore">learn more</div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="txt">
+                            <p class="bn_category">set promotion</p>
+                            <h2>smoothe & hydrate with petal-fresh solutions</h2>
+                            <p class="bn_explain">calendula collection</p>
+                            <p class="kr_ex">자극받은 피부와 오돌토돌 피부를 케어해주는 칼렌듈라 꽃잎 추출물 함유</p>
+                            <div class="learnMore">learn more</div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+            <!-- 어바웃 -->
+            <section class="aboutSection">
+                <p>healthy skin for all</p>
+                <p><span>약국 전통에서 축적된 전문적인 지식과 천연 성분에 대한 노하우로<br>순하면서도 탁월한 효과의 제품을 만듭니다.</span><br>천연 성분 및 자세한 제품 설명이 표기된 키엘 제품들을 만나보세요.</p>
+            </section>
+            <!-- 베스트 셀러 -->
+            <section class="productSlide">
+                <h2>best sellers</h2>
+                <ul class="prd_tab">
+                    <li class="focus">
+                        <a href="#"># 스킨 케어</a>
+                        <p>공식 온라인 몰에서<br>가장 많은 고객님께 사랑받고 있는<br>스킨 케어 베스트 셀러를 소개합니다.</p>
+                    </li>
+                    <li>
+                        <a href="#"># 바디 케어</a>
+                        <p>풍부한 질감의 크림에서부터<br>산뜻한 로션 타입까지<br>다양한 텍스처의 바디 케어 제품 베스트 셀러를 소개합니다.</p>
+                    </li>
+                    <li>
+                        <a href="#"># 헤어 케어</a>
+                        <p>모발과 두피에 쌓인 더러운<br>노폐물, 불쾌한 냄새들을<br>효과적으로 씻어내 주는 키엘 헤어 케어 베스트 셀러를 소개합니다.</p>
+                    </li>
+                </ul>
+                <div class="scroll_container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="swiper_img">
+                                <a href="#">
+                                <img src="images/best1.png" alt="bestSkin1">
+                                </a>
+                            </div>
+                            <div class="swiper_txt"><a href="#">울트라 페이셜 크림</a></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="swiper_img"><a href="#"><img src="images/best2.png" alt="bestSkin2"></a></div>
+                            <div class="swiper_txt"><a href="#">크리미 아이 트리트먼트</a></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="swiper_img"><a href="#"><img src="images/best3.png" alt="bestSkin3"></a></div>
+                            <div class="swiper_txt"><a href="#">칼렌듈라 허벌 엑스트렉트 토너</a></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="swiper_img"><a href="#"><img src="images/best4.png" alt="bestSkin4"></a></div>
+                            <div class="swiper_txt"><a href="#">클리어리 코렉티브 다트 스팟 솔루션</a></div>
+                        </li>
+                    </ul>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+            <!-- 베스트 리뷰 -->
+            <section class="bestReview">
+                <h2>best review</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="photo"><img src="images/review1.jpg" alt="리뷰1"></div>
+                            <div class="con">
+                                <div><i>♥♥♥♥♥</i><span>bre***</span></div>
+                                <p>자기전에 바르고 일어나면 그 날 피부가 정말 촉촉해요. 향도 은은해서 만족스러워요!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="photo"><img src="images/review2.jpg" alt="리뷰2"></div>
+                            <div class="con">
+                                <div><i>♥♥♥♥♥</i><span>avo***</span></div>
+                                <p>샘플을 사용하다가 직접 구매해서 사용하고 있어요. 사용후 피부가 촉촉하면서 윤기가 돌아요. 보습 지속력도 좋아 하루종일 피부가 건조하지 않고 당김이 없어 좋아요.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="photo"><img src="images/review3.jpg" alt="리뷰3"></div>
+                            <div class="con">
+                                <div><i>♥♥♥♥♥</i><span>sun***</span></div>
+                                <p>우연히 쓰게 돼서 3년째 정착중인 크림이에요. 겨울철에는 물론이고 여름에도 토너에 이거 하나만 바르면 딱입니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="photo"><img src="images/review4.jpg" alt="리뷰4"></div>
+                            <div class="con">
+                                <div><i>♥♥♥♥♥</i><span>cle***</span></div>
+                                <p>모공관리 해보려고 샘플 사용 후 주문했어요. 끈적한 질감을 안좋아하는데 이 제품은 바로 흡수되는 느낌에 끈적거리지도 않아서 좋아요.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="rvbtn">view more</div>
+            </section>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/jlFYNtb8EMc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- footer -->
+            <footer>
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">글로벌 사이트</a></li>
+                </ul>
+                <div class="box">
+                    <p>사업자명: 엘오케이(유) | 대표: 크리스티앙 마르코스 아르나이<br>사업자 등록번호: 220-81-73483 | 통신판매업신고: 2012-서울강남-01663<br>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층<br>개인정보관리책임자: 안선지</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
