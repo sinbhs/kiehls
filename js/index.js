@@ -7,7 +7,7 @@ $(function(){
 
     //scrollTop scroll event 스크롤 이벤트 - 헤더 높이 조정, top버튼 등장
     $(window).scroll(function(){
-        $('.scrollTop').stop().animate({opacity:0},200);
+        $('.scrollTop').stop().animate({opacity:0},700);
         var scroll = $(this).scrollTop();
         if(scroll > 90) {
             $('.scrollTop').stop().animate({opacity:1});
@@ -38,6 +38,7 @@ $(function(){
     //메인 배너 banner swiper
     var swiper = new Swiper('.swiper-container',{
         autoplay: {delay:3000},//자동 슬라이드
+        speed:2000,//스피드
         pagination: {el: '.swiper-pagination', type: 'bullets', clickable :true}
     })
     
