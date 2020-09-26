@@ -151,7 +151,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     /* header */
     header {height:160px; font-size: 15px; font-weight: 500;}
     header.scrollDown {height:80px; background-color: #fff; border-bottom: 1px solid #eee;}
-    header h1 {width:220px; height:58px;}
+    header h1 {width:220px; height:58px; position: absolute; left:50%; transform: translateX(-50%);}
     header .hamburgerMenu {display:none;}
 
     header .gnb, header .sub_gnb {display: flex;}
