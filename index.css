@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {font-family:'Montserrat','Noto Sans KR', sans-serif;}
-p, h2 {margin:0;}
+p, h1, h2 {margin:0;}
 ul {list-style: none; margin:0; padding:0;}
 a {text-decoration: none; color:inherit; display:block;}
 img {vertical-align: top;}
@@ -16,6 +16,7 @@ header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;po
 header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
 header .hamburgerMenu .center::after {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; bottom:7px;}
 header h1 {text-indent: -9999px; background: url(images/kielLogo.png) no-repeat center/cover; width:125px; height:33px;}
+header h1 a {height:100%;}
 header .gnb, header .sub_gnb {display: none;}
 
 /* mobile hamburgerMenu overlay */
@@ -47,12 +48,12 @@ p {line-height: 21px;}
 /* 배너 */
 .bannerSection {overflow: hidden;}
 .bannerSection .paddingBox {display: none;}
-.bannerSection .banner {display: flex; width:500%; height:360px;}
+.bannerSection .banner {display: flex; width:500%; height:375px;}
 .bannerSection .banner li {width:100vw; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; justify-content: center; align-items: center;}
-.bannerSection .banner li:first-child {background-image:url(images/bannerBgM1.jpg); background-position: 85% center;}
-.bannerSection .banner li:nth-child(2) {background-image:url(images/bannerBgM2.jpg); background-position: 82% center;}
-.bannerSection .banner li:nth-child(3) {background-image:url(images/bannerBgM3.jpg); background-position: 0 center;}
-.bannerSection .banner li:nth-child(4) {background-image:url(images/bannerBgM4.jpg); background-position: 95% 0;}
+.bannerSection .banner li:first-child {background-image:url(images/mainBannerBg1.png); background-position: 85% center;}
+.bannerSection .banner li:nth-child(2) {background-image:url(images/mainBannerBg2.png); background-position: 82% center;}
+.bannerSection .banner li:nth-child(3) {background-image:url(images/mainBannerBg3.png); background-position: 0 center;}
+.bannerSection .banner li:nth-child(4) {background-image:url(images/mainBannerBg4.png); background-position: 95% 0;}
 .bannerSection .banner .txt {width:100%; padding:0 5.2777%;}
 .bannerSection .banner .txt p {font-size: 14px;}
 .bannerSection .banner .txt .bn_category {color:#de404f; font-weight: 600; text-transform: uppercase;}
@@ -88,8 +89,6 @@ h2 {text-transform: uppercase; color:#000;}
 
 .productSlide .prd_tab li p {display: none;}
 
-
-
 /* 베스트셀러 스크롤 스와이퍼 */
 .scroll_container {width:100%; height:315px; padding-top:30px; overflow: hidden; position: relative;}
 .scroll_container .swiper-wrapper {display:flex;}
@@ -98,6 +97,12 @@ h2 {text-transform: uppercase; color:#000;}
 .swiper-scrollbar {background-color: #d8c9bf;}
 .swiper-container-horizontal>.swiper-scrollbar {height:2px; z-index: 16;}
 .swiper-scrollbar-drag {background-color: #967c69;}
+
+/* 베스트셀러 이미지 호버 */
+.swiper_img > a {position: relative;width:285px; height: 245px; margin:0 auto;}
+.swiper_img > a img {position: absolute; top:0; left:0;}
+.swiper_img > a img:nth-of-type(2) {opacity: 0; transition: .3s;}
+.swiper_img:hover a img:nth-of-type(2) {opacity: 1;}
 
 /* 베스트 리뷰 */
 .bestReview {margin:0 auto; margin-top:65px; width: 90%;}
@@ -145,13 +150,22 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     header.scrollDown {height:80px; background-color: #fff; border-bottom: 1px solid #eee;}
     header h1 {width:220px; height:58px;}
     header .hamburgerMenu {display:none;}
+
     header .gnb, header .sub_gnb {display: flex;}
     header .gnb li {margin-right:45px;}
-    header .gnb li:hover {color:#de404f;}
+    header .gnb > li > a {height: 160px; line-height: 160px;}
+    header .gnb li:hover > a{color:#de404f;}
+
     header .right {display: flex;}
     header .right a {margin-right:45px;}
     header .right .sub_gnb li:hover {color:#de404f;}
     header .right .sub_gnb li:last-child a {margin-right: 0;}
+
+    /* header 호버시 나타나는 소메뉴 */
+    .sub {width:100%; background-color: #fff; display: flex; align-items: center; padding:10px 5.2777%; position:fixed; top:120px; left:0; z-index:999; font-size:15px;}
+    .sub li{padding:10px 0; font-weight: normal;}
+    .sub li:first-child {font-weight: bold;}
+    html.scrollDown .sub {top:80px;}
 
     .container {padding-top:160px;}
     /* banner */
@@ -195,6 +209,12 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
 
     .scroll_container {width: 74%; height:330px;}
     .swiper-slide {width:20%;}
+
+    /* 베스트셀러 이미지 호버 */
+    .swiper_img > a {position: relative; width:285px; height: 245px; margin:0 auto;}
+    .swiper_img > a img {position: absolute; top:0; left:0;}
+    .swiper_img > a img:nth-of-type(2) {opacity: 0; transition: .3s;}
+    .swiper-slide:hover .swiper_img a img:nth-of-type(2) {opacity: 1;}
 
     /* best review */
     .bestReview {margin:0 auto; width: 70%;}

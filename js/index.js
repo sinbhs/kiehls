@@ -5,6 +5,19 @@ $(function(){
         // return false;
     });
 
+    //header 마우스 이벤트 (소메뉴 제어)
+    $('.sub').hide();
+    $('header .gnb > li').eq(0).hover(function(){
+        $('.sub_menu1').stop().slideDown();
+    },function(){
+        $('.sub_menu1').stop().slideUp();
+    });
+    $('header .gnb > li').eq(1).hover(function(){
+        $('.sub_menu2').stop().slideDown();
+    },function(){
+        $('.sub_menu2').stop().slideUp();
+    });
+
     //scrollTop scroll event 스크롤 이벤트 - 헤더 높이 조정, top버튼 등장
     $(window).scroll(function(){
         $('.scrollTop').stop().animate({opacity:0},700);
@@ -12,8 +25,10 @@ $(function(){
         if(scroll > 90) {
             $('.scrollTop').stop().animate({opacity:1});
             $('header').addClass('scrollDown');
+            $('html').addClass('scrollDown');
         } else {
             $('header').removeClass('scrollDown');
+            $('html').removeClass('scrollDown');
         }
     });
 
@@ -48,14 +63,28 @@ $(function(){
         scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
-          }
+            draggable:true
+          },
+        speed:500,
+        grabCursor: true
     });
 
     //best seller focus
     $('.prd_tab li').on('click',function(){
+        //메인 분류 명
         $('.prd_tab li').removeClass('focus');
         $(this).addClass('focus');
+        
+        /*
+        let wd = $(window).width();
+        if(wd >= 1440) {
+            //아래 설명
+            $('.prd_tab li p').stop().slideUp();
+            $(this).children('p').stop().slideDown();
+        }
+        */
     });
+
     /*
     //화면비율
     $(window).on('resize',function(){
