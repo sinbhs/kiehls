@@ -48,7 +48,7 @@ p {line-height: 21px;}
 /* 배너 */
 .bannerSection {overflow: hidden;}
 .bannerSection .paddingBox {display: none;}
-.bannerSection .banner {display: flex; width:500%; height:375px;}
+.bannerSection .banner {display: flex; width:100%; height:375px;}
 .bannerSection .banner li {width:100vw; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; justify-content: center; align-items: center;}
 .bannerSection .banner li:first-child {background-image:url(images/mainBannerBg1.png); background-position: 85% center;}
 .bannerSection .banner li:nth-child(2) {background-image:url(images/mainBannerBg2.png); background-position: 82% center;}
@@ -60,6 +60,10 @@ p {line-height: 21px;}
 .bannerSection .banner .txt h2 {font-size:25px; font-weight:600; text-transform: capitalize; padding-bottom:15px;}
 .bannerSection .banner .txt .bn_explain {display: none;}
 .bannerSection .banner .txt .kr_ex {padding-bottom:40px; color:#2d2d2d; letter-spacing: -0.3px;}
+
+.bannerSection .banner li:nth-child(3){background-size: 1400px; background-position: 40% 50%;}
+.bannerSection .banner li:nth-child(3) .txt {padding-left:38%;}
+
 .bannerSection .banner .txt .learnMore {background-color: rgba(255, 255, 255, 0.308); border:1px solid #de404f; border-radius: 40px; padding:15px 25px; font-weight: bold; color:#de404f; display: inline-block; transition:0.3s; cursor: pointer; font-size: 12px; text-transform: uppercase;}
 .bannerSection .banner .txt .learnMore:active {background-color: #de404f; color:#fff;}
 /* swiper btn */
@@ -102,7 +106,6 @@ h2 {text-transform: uppercase; color:#000;}
 .swiper_img > a {position: relative;width:285px; height: 245px; margin:0 auto;}
 .swiper_img > a img {position: absolute; top:0; left:0;}
 .swiper_img > a img:nth-of-type(2) {opacity: 0; transition: .3s;}
-.swiper_img:hover a img:nth-of-type(2) {opacity: 1;}
 
 /* 베스트 리뷰 */
 .bestReview {margin:0 auto; margin-top:65px; width: 90%;}
@@ -110,7 +113,7 @@ h2 {text-transform: uppercase; color:#000;}
 .bestReview ul li {border:1px solid #d8c9bf; margin-bottom:12px; padding:18px; box-sizing: border-box;}
 .bestReview ul li a {display: flex; align-items: center;}
 .bestReview ul li .photo img {width:118px;}
-.bestReview ul li a .con {width:60%; padding-left:18px; box-sizing: border-box; font-size: 10px; line-height: 16px;}
+.bestReview ul li a .con {width:60%; padding-left:18px; box-sizing: border-box; font-size: 12px; line-height: 1; letter-spacing: -0.3px;}
 .bestReview ul li a .con div {margin-bottom:15px;}
 .bestReview ul li a .con i {font-style: normal; color:#de404f; line-height: 0;}
 .bestReview ul li a .con span {float:right; display: block; line-height: 17px;}
@@ -124,19 +127,19 @@ h2 {text-transform: uppercase; color:#000;}
 .video {margin-bottom:65px;}
 
 /* footer */
-footer {padding: 0 35px; font-size: 10px; font-family: 'Noto Sans KR', sans-serif;}
-footer ul {display: flex; font-size: 11px; margin-bottom:35px; font-weight: 500;}
-footer ul li {padding-right:18px;}
+footer {padding: 0 35px; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
+footer ul {display: flex; font-size: 14px; margin-bottom:35px; font-weight: 500;}
+footer ul li {padding-right:20px;}
 footer ul li:hover {color:#de404f;}
 footer .box {margin-bottom: 18px;}
-footer .box p {line-height:19px; letter-spacing: -0.3px;}
-footer .copyright {margin-bottom: 18px; font-size: 10px; text-transform: capitalize;}
+footer .box p {line-height:1.8; letter-spacing: -0.3px;}
+footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capitalize;}
 /* sns */
 .sns {display: flex; margin-bottom:47px; align-items: center;}
-.sns div {margin-right:10px;}
+.sns div {margin-right:18px;}
 
 /* 스크롤 탑 */
-.scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(images/scrollTop.png) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
+.scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
 
 /* hamburgerMenu mask */
 .mask {position: fixed; top:0; left:0; width:100%; height:100%; background-color: #4a3939; z-index: 18; opacity: 0; visibility: hidden; transition:.5s ease-in-out;}
@@ -172,11 +175,11 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .container .bannerSection {width: 89.4446%;}
     .bannerSection .paddingBox {display: block; width:5.2777%;}
     .bannerSection .banner {height:717px;}
-    .bannerSection .banner li {background-position:center;}
-    .bannerSection .banner li:first-child {background-image: url(images/mainBannerBg1.png);}
-    .bannerSection .banner li:nth-child(2) {background-image: url(images/mainBannerBg2.png);}
-    .bannerSection .banner li:nth-child(3) {background-image: url(images/mainBannerBg3.png);}
-    .bannerSection .banner li:last-child {background-image: url(images/mainBannerBg4.png);}
+    .bannerSection .banner li:first-child {background-position: center;}
+    .bannerSection .banner li:nth-child(2) {background-position:center;}
+    .bannerSection .banner li:nth-child(3) {background-size: cover; background-position: center;}
+    .bannerSection .banner li:nth-child(3) .txt {text-align:left;}
+    .bannerSection .banner li:last-child {background-position: center;}
 
     .bannerSection .banner .txt {padding:0 203px;}
     .bannerSection .banner .txt p {font-size: 16px; padding-left:0.4%;}
@@ -184,7 +187,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .bannerSection .banner .txt .bn_explain {display: block; color:#000; font-weight: 600; text-transform: capitalize; margin-bottom:44px;}
     .bannerSection .banner .txt .kr_ex {margin-bottom: 55px;}
     .bannerSection .banner li:nth-child(3) {justify-content: flex-end;}
-    .bannerSection .banner li:nth-child(3) .txt {width: 26.7879%; padding-right:15%;}
+    .bannerSection .banner li:nth-child(3) .txt {width: 26.7879%; padding-right:15%; padding-left:0;}
 
     .bannerSection .banner .txt .learnMore {font-size:15px; background-color: transparent;}
     .bannerSection .banner .txt .learnMore:hover {background-color: #de404f; color: #fff;}
@@ -211,8 +214,6 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .swiper-slide {width:20%;}
 
     /* 베스트셀러 이미지 호버 */
-    .swiper_img > a {position: relative; width:285px; height: 245px; margin:0 auto;}
-    .swiper_img > a img {position: absolute; top:0; left:0;}
     .swiper_img > a img:nth-of-type(2) {opacity: 0; transition: .3s;}
     .swiper-slide:hover .swiper_img a img:nth-of-type(2) {opacity: 1;}
 
