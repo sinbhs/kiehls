@@ -32,7 +32,17 @@ $(function(){
         }
     });
 
-    //mobile hamburgerMenu
+    //검색 버튼
+    $('header .right a img').on('click',function(){
+        $('.searchBox').toggleClass('click');//서치박스 opacity 제어
+        $('html').toggleClass('activeM');//마스크
+        $('.searchBox .close-icon').on('click',function(){
+            $('.searchBox').removeClass('click');
+            $('html').removeClass('activeM');
+        });
+    });
+
+    //모바일 햄버거 메뉴 이벤트
     $('.hamburgerMenu').on('click',function(){
         $(this).toggleClass('activeM');
         $('html').toggleClass('activeM');
@@ -40,9 +50,14 @@ $(function(){
         const menu = $('.hamburgerMenu').hasClass('activeM');
         if(menu) {
             $('aside').animate({left:0},300);
-            $('aside li').on('click',function(){
-            $('aside .second').animate({opacity:1});
-        });
+            $('aside li').eq(0).on('click',function(){
+                $('aside .second').css({opacity:0});
+                $('aside .brand').animate({opacity:1});
+            });
+            $('aside li').eq(1).on('click',function(){
+                $('aside .second').css({opacity:0});
+                $('aside .prd').animate({opacity:1});
+            });
         } else {
             $('aside').animate({left:'-100%'},200);
             $('aside .second').animate({opacity:0});

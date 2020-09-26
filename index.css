@@ -9,8 +9,8 @@ img {vertical-align: top;}
 /* ---------- 모바일 ---------- */
 
 /* 헤더 */
-header {width: 100%; height:100px; display: flex; align-items: center; justify-content: space-between; padding:0 5.2777%; box-sizing: border-box; position:fixed; top:0; left:0; z-index: 20; transition:.3s;}
-header.scrollDown {height:60px; background-color: #fff; border-bottom: 1px solid #eee;}
+header {width: 100%; height:100px; background-color: #fff; display: flex; align-items: center; justify-content: space-between; padding:0 5.2777%; box-sizing: border-box; position:fixed; top:0; left:0; z-index: 20; transition:.3s;}
+header.scrollDown {height:60px; border-bottom: 1px solid #eee;}
 header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: center; cursor: pointer;}
 header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;position: relative; z-index: 20;}
 header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
@@ -23,7 +23,7 @@ header .gnb, header .sub_gnb {display: none;}
 aside {display: flex; position: fixed; top:0; left:-100%; width: 100%; height:100%; z-index: 19;}
 aside .first {width:50%; height:100vh; background-color: #fff; position: absolute; top:0; left:0; z-index: 18; padding:110px 25px 0; box-sizing: border-box; display: flex; flex-direction: column; letter-spacing: -0.3px; font-weight: 300;}
 aside .first .category {font-size: 15px; line-height: 2.5;}
-aside .first .member {font-size:12px; line-height: 2; position: absolute; bottom:50px; left:25px;}
+aside .first .member {font-size:14px; line-height: 2; position: absolute; bottom:150px; left:25px;}
 aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: absolute; top:0; right:0; padding:110px 25px 0; box-sizing: border-box; font-size:15px; line-height: 2.5; letter-spacing: -0.3px; opacity: 0; font-weight: 300;}
 
 /* mobile hamburgerMenu active */
@@ -40,8 +40,17 @@ aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: abso
     100% {bottom:0; transform:rotate(90deg);}
 }
 
+/* search box */
+.searchBox {width:100%; position:fixed; top:99px; z-index:17; background-color: #fff; opacity: 0; transition: 0.3s;}
+.searchBox.click {opacity: 1;}
+html.scrollDown .searchBox {top:59px;}
+fieldset {border:none; border-radius: 0; padding:0; width:80%; margin:0 auto; position: relative;}
+fieldset img {position:absolute; display: block;}
+fieldset .search-icon {top:32px;}
+fieldset input {width:100%; padding:0 36px 5px; border:0; line-height: 32px; font-size:15px; color:#7c8389; background-color: #fff; margin:24px auto; border-bottom:1px solid #000; box-sizing: border-box; outline: none;}
+fieldset .close-icon {width:15px; top:32px; right:10px; cursor: pointer;}
 
-/* 컨테이너 */
+/* container */
 .container {color:#555555; padding-top:100px;}
 p {line-height: 21px;}
 
@@ -142,7 +151,7 @@ footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capital
 .scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
 
 /* hamburgerMenu mask */
-.mask {position: fixed; top:0; left:0; width:100%; height:100%; background-color: #4a3939; z-index: 18; opacity: 0; visibility: hidden; transition:.5s ease-in-out;}
+.mask {position: fixed; top:0; left:0; width:100%; height:100%; background-color: #4a3939; z-index: 16; opacity: 0; visibility: hidden; transition:.5s ease-in-out;}
 html.activeM .mask {opacity: 0.5; visibility: visible;}
 
 
@@ -170,6 +179,11 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .sub li:first-child {font-weight: bold;}
     html.scrollDown .sub {top:80px;}
 
+    /* search box */
+    .searchBox {top:160px;}
+    html.scrollDown .searchBox {top:80px;}
+    fieldset {width:50%;}
+    
     .container {padding-top:160px;}
     /* banner */
     .container .bannerSection {width: 89.4446%;}
@@ -222,6 +236,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .bestReview h2 {margin:140px 0 100px; font-size:2.083vw;}
     .bestReview ul {display: flex;}
     .bestReview ul li {margin:0 2% 0 0; width:23.5%; padding:0;}
+    .bestReview ul li:last-child {margin:0;}
     .bestReview ul li a {display: block;}
     .bestReview ul li .photo img {width: 100%;}
     .bestReview ul li a .con {width: 100%; padding:35px; font-size: 14px; letter-spacing: -0.3px; line-height: 25px;}
