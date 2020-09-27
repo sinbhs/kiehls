@@ -2,8 +2,11 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="9.382px" height="4.023px" viewBox="0 0 9.382 4.023" enable-background="new 0 0 9.382 4.023" xml:space="preserve">
+	 width="9.859px" height="4.313px" viewBox="0 0 9.859 4.313" enable-background="new 0 0 9.859 4.313" xml:space="preserve">
 <g>
-	<text transform="matrix(-1 0 0 -1 9.9185 -1.1406)" fill="#040000" font-family="'Montserrat-Medium'" font-size="9">&lt;&lt; </text>
+	<polyline fill="none" stroke="#040000" stroke-linejoin="bevel" stroke-miterlimit="10" points="5.575,3.804 9.59,2.202 
+		5.575,0.554 	"/>
+	<polyline fill="none" stroke="#040000" stroke-linejoin="bevel" stroke-miterlimit="10" points="0.219,3.804 4.234,2.202 
+		0.219,0.554 	"/>
 </g>
 </svg>

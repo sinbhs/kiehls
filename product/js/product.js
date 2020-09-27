@@ -80,15 +80,26 @@ $(function(){
           el: '.swiper-pagination',
           clickable: true,
         },
+        /*
+        // Responsive breakpoints
+        breakpoints: {
+            //when window width is >= 1440px
+            1440: {
+                slidesPerView: 6
+            }
+        }
+        */
       });
-    
+    /*
     //pc버전 swiper 기능 off
+    var wd = $(window).width();
     var width = $(window).resize().width();
-    if(width >= 1440) {
+    if(width >= 1440 || wd>= 1440) {
         $('.menuCategory').removeClass('swiper-container');
         $('.menuCategory ul').removeClass('swiper-wrapper');
         $('.menuCategory ul li').removeClass('swiper-slide');
     }
+    */
 
     // Category 선택 마다 제품 보이기
     // category 변경
@@ -98,47 +109,59 @@ $(function(){
         $('.menuCategory ul li').removeClass('focus');
         $(this).addClass('focus');
     });
+    
     // 카테고리에 따른 컨텐츠 변경
     // 모든 스킨
-    $('.swiper-slide').eq(0).on('click',function(){
+    $('.menuCategory ul li').eq(0).on('click',function(){
         $('.prdList li').fadeIn('fast');
-        $('.prdList li:nth-child(2)').css('padding-right','0');
-        $('.prdList li:nth-child(3)').css('padding-right','1.0666%');
-        $('.prdList li:nth-child(5)').css('padding-right','1.0666%');
         $('.prdList li:last-child').hide();
+        $('.category-path ol li').eq(2).text('모든 스킨');
     });
     // 클렌저&스크럽
-    $('.swiper-slide').eq(1).on('click',function(){
+    $('.menuCategory ul li').eq(1).on('click',function(){
         $('.prdList li').fadeOut('fast');
         $('.prdList .cleansing').fadeIn('fast');
+        $('.prdList li:last-child').hide();
+        $('.category-path ol li').eq(2).text('클렌저&스크럽');
     });
     // 에센스
-    $('.swiper-slide').eq(2).on('click',function(){
+    $('.menuCategory ul li').eq(2).on('click',function(){
         $('.prdList li').fadeOut('fast');
         $('.prdList .essence').fadeIn('fast');
         $('.prdList li:last-child').show();
-        $('.prdList li:nth-child(2)').css('padding-right','1.0666%');
-        $('.prdList li:nth-child(5)').css('padding-right','0');
+        $('.category-path ol li').eq(2).text('에센스');
     });
     // 마스크
-    $('.swiper-slide').eq(3).on('click',function(){
+    $('.menuCategory ul li').eq(3).on('click',function(){
         $('.prdList li').fadeOut('fast');
         $('.prdList .skinMask').fadeIn('fast');
+        $('.prdList li:last-child').hide();
+        $('.category-path ol li').eq(2).text('마스크');
     });
     // 토너
-    $('.swiper-slide').eq(4).on('click',function(){
+    $('.menuCategory ul li').eq(4).on('click',function(){
         $('.prdList li').fadeOut('fast');
         $('.prdList .toner').fadeIn('fast');
+        $('.prdList li:last-child').hide();
+        $('.category-path ol li').eq(2).text('토너');
     });
     // 크림
-    $('.swiper-slide').eq(5).on('click',function(){
+    $('.menuCategory ul li').eq(5).on('click',function(){
         $('.prdList li').fadeOut('fast');
         $('.prdList .cream').fadeIn('fast');
-        $('.prdList li:nth-child(3)').css('padding',0);
+        $('.prdList li:last-child').hide();
+        $('.category-path ol li').eq(2).text('크림');
     });
 
     //view more 누르면 나타나는 9번째 제품
-    $('.viewmoreBtn').on('click',function(){
+    $('.menuCategory ul li').on('click',function(){
         $('.prdList li:last-child').show();
+    });
+
+    // 페이지 셀렉트
+    $('.page ul li').eq(2).addClass('select');
+    $('.page ul li').on('click',function(){
+        $('.page ul li').removeClass('select');
+        $(this).addClass('select');
     });
 });
