@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>키엘 공식 온라인 몰</title>
+        <meta name="description" content="온라인 몰 혜택, 프로모션, 스킨케어, 바디케어, 헤어, 향수 등 제품소개">
+        <meta name="keywords" content="키엘, 공식 온라인 몰, 온라인몰 혜택 Kiehl's">
+        <meta property="og:title" content="키엘 공식 온라인 몰">
+        <meta property="og:url" content="http://sinbhs.dothome.co.kr/kiehlsWebpage/prdDetail/detail.html">
+        <meta property="og:image" content="https://www.kiehls.co.kr/on/demandware.static/-/Sites-kiehls-kr-Library/ko_KR/dwb7ccbcce/170309-og-image.jpg">
+        <meta property="og:description" content="온라인 몰 혜택, 프로모션, 스킨케어, 바디케어, 헤어, 향수 등 제품소개">
+        <!-- twitter -->
+        <meta name="twitter:card" content="키엘 공식 온라인 몰">
+        <meta name="twitter:title" content="키엘 공식 온라인 몰">
+        <meta name="twitter:url" content="http://sinbhs.dothome.co.kr/kiehlsWebpage/prdDetail/detail.html">
+        <meta name="twitter:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZUYjJ%2FbtqJjFGvYnX%2FF4iKbvfAOw3pqucAxz499K%2Fimg.jpg">
+        <meta name="twitter:description" content="온라인 몰 혜택, 프로모션, 스킨케어, 바디케어, 헤어, 향수 등 제품소개">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- normalize css -->
+        <link rel="stylesheet" href="../common/normalize.css">
+        <!-- font css -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="../common/swiper-bundle.min.css">
+        <!-- detail css -->
+        <link rel="stylesheet" href="detail.css">
+
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="../common/swiper-bundle.min.js"></script>
+        <script src="js/detail.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- 모바일 햄버거 메뉴 -->
+            <div class="hamburgerMenu">
+                <div class="center"></div>
+            </div>
+            <!-- 메인 네비게이션 바 -->
+            <ul class="gnb">
+                <li>
+                    <a href="#">브랜드 소개</a>
+                    <div class="sub_menu1 sub">
+                        <ul>
+                            <li>about Brand</li>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">매장 안내</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../product/product.html">제품 소개</a>
+                    <div class="sub_menu2 sub">
+                        <ul>
+                            <li>by Category</li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">베스트 셀러</a></li>
+                            <li><a href="../product/product.html">스킨 케어</a></li>
+                            <li><a href="#">맨 케어</a></li>
+                            <li><a href="#">바디 & 헤어</a></li>
+                            <li><a href="#">반려동물</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <!-- 로고 -->
+            <h1><a href="../index.html">kiehl's Logo</a></h1>
+            <!-- 검색, 멤버, 장바구니 내비게이션 -->
+            <div class="right">
+                <a href="#"><img src="../images/searchIcon.svg" alt="search"></a>
+                <ul class="sub_gnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#"><img src="../images/shoppingBag.svg" alt="shoppingBag"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- 검색창 -->
+        <div class="searchBox">
+            <form id="searchBarform">
+                <fieldset>
+                    <img src="../images/searchIcon.svg" alt="search icon" class="search-icon">
+                    <input type="text" id="keyword" placeholder="Type here to search">
+                    <img src="../images/closebtn.png" alt="close-icon" class="close-icon">
+                </fieldset>
+            </form>
+        </div>
+        <!-- 햄버거 메뉴 overlay -->
+        <aside>
+            <div class="first">
+                <ul class="category">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">제품 소개</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+                <ul class="member">
+                    <li><a href="#">로그인/회원가입</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="brand second">
+                <ul>
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                </ul>
+            </div>
+            <div class="prd second">
+                <ul>
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="../product/product.html">베스트 셀러</a></li>
+                    <li><a href="../product/product.html">스킨 케어</a></li>
+                    <li><a href="#">맨 케어</a></li>
+                    <li><a href="#">바디 & 헤어</a></li>
+                    <li><a href="#">반려동물</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- contents container-->
+        <div class="container">
+            <!-- 제품 메뉴 박스 -->
+            <div class="product-menu-box">
+                <!-- 카테고리 타이틀 -->
+                <div class="titleArea">
+                    <div class="return_history">
+                        <a href="#" onclick="history.go(-1); return false;"><img src="images/historyReturnBtn.svg" alt="뒤로가기 버튼"></a>
+                    </div>
+                    <h2>상품 상세정보</h2>
+                </div>
+                <!-- 경로 -->
+                <div class="category-path">
+                    <ol>
+                        <li><a href="../index.html">홈</a></li>
+                        <li><a href="product.html">스킨 케어</a></li>
+                        <li><a href="#">모든 스킨</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- 제품 박스1 -->
+            <div class="prdBox1">
+                <div class="prdImg swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"></li>
+                        <li class="swiper-slide"></li>
+                        <li class="swiper-slide"></li>
+                        <li class="swiper-slide"></li>
+                    </ul>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="prdInfo">
+                    <div class="infoTop">
+                        <h3>울트라 페이셜 크림</h3>
+                        <p>한 층 더 업그레이드된 수분 크림의 강력한 보습력<br>2배 더 오래가고 2배 더 촉촉한 보습감</p>
+                    </div>
+                    <h4>피부타입</h4>
+                    <p>민감한 피부를 포함한 모든 피부 유형</p>
+                    <form>
+                        <div class="capacity">
+                            <input type="button" value="28ml" class="choice">
+                            <input type="button" value="50ml">
+                            <input type="button" value="125ml">
+                        </div>
+                        <div class="ea_price">
+                            <div class="ea">
+                                <select name="ea" id="ea">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <p>27,000 <span>28ml (1ea)</span></p>
+                            </div>
+                        </div>
+                        <input type="button" value="add cart" class="cart">
+                    </form>
+                </div>
+            </div>
+            <!-- 제품 박스2 -->
+            <div class="prdBox2">
+                <div class="left">
+                    <div class="img1">img1</div>
+                    <p>독특하고 가벼운 질감과 24시간 지속되는 수분 공급으로 <br>피부를 부드럽고 매끄럽게 바꿔주며 눈에 띄게 건강해진 피부를 느껴 볼 수 있습니다.</p>
+                    <p>올리브의 스쿠알란 성분이 함유된 기름지지 않은 가벼운 보습제로 피부의 가장 건조한 부위에서도 촉촉한 피부를 유지합니다.</p>
+                </div>
+                <div class="right">
+                    <div class="img2">img2</div>
+                    <p>추운 겨울도 이겨내는 빙하 당단백질을 함유하여 피부에 깊은 보습을 주고, 수분 손실로부터 피부를 보호해 줍니다.</p>
+                    <p>보다 많은 사람들이 울트라 페이셜 크림을 경험할 수 있도록, 지난 5년간 수 백가지 성분 배합 테스트를 진행하여 탄생했습니다.</p>
+                </div>
+            </div>
+            <div class="prdBox3">
+                <h2>product detail</h2>
+                <p>키엘 공식 온라인 몰의 제품 정보는<br>전자상거래 등에서의 상품정보제공 고시에 따라 작성되었습니다.</p>
+                <ul class="menu">
+                    <li>
+                        <span>사용 방법</span>
+                        <div class="txt">
+                            에센스 후 얼굴과 목에 펴 발라주세요. 오전 오후 모두 사용 가능합니다.
+                        </div>
+                    </li>
+                    <li>
+                        <span>전성분</span>
+                        <div class="txt">
+                            정제수 글리세린 사이클로헥사실록세인 스쿠알란 비스-피이지-18메틸에터다이메틸실레인 수크로오스스테아레이트 스테아릴알코올 피이지-8스테아레이트 미리스틸미리스테이트 펜타에리스리틸테트라에틸헥사노에이트 살구씨오일 페녹시에탄올 아보카도오일 글리세릴스테아레이트 세틸알코올 쌀겨오일 올리브오일 클로페네신 스테아릭애씨드 팔미틱애씨드 다이소듐이디티에이 아크릴레이트/C10-30알킬아크릴레이트크로스폴리머 카보머 스위트아몬드오일 잔탄검 에틸헥실글리세린 소듐하이드록사이드 토코페롤 돌콩오일 슈도알테로모나스발효추출물 미리스틱애씨드 하이드록시팔미토일스핑가닌 비에이치티 살리실릭애씨드 시트릭애씨드
+                        </div>
+                    </li>
+                    <li>
+                        <span>사용시 주의사항</span>
+                        <div class="txt">
+                            <ol>
+                                <li>화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움 등의 증상이나 부작용이 있는 경우 전문의와 상담할 것</li>
+                                <li>상처가 있는 부위에는 사용을 자제할 것</li>
+                                <li>보관 및 취급 시 주의 사항
+                                    <p>가) 어린이의 손이 닿지 않는 곳에 보관할 것</p>
+                                    <p>나) 직사광선을 피해서 보관할 것</p>
+                                    <p>상세한 주의사항 내용은 제품에 부착된 라벨 내용을 참조해 주세요.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <span>배송 정보</span>
+                        <div class="txt">
+                            배송되는 제품은 사용기한이 12개월 이상 남아있는 제품부터 순차적으로 배송됩니다.<br>배송 문의 : 080-822-3322
+                        </div>
+                    </li>
+                    <li>
+                        <span>판매 정보</span>
+                        <div class="txt">
+                            <ul>
+                                <li>책임판매업자: 엘오케이(유)</li>
+                                <li>제조원: 미국 로레알사</li>
+                                <li>제조국: 미국</li>
+                                <li>품질보증기준: 본 제품에 이상이 있을 경우 공정거래위원회 고시 품목별 소비자 분쟁해결기준에 의해 보상해드립니다.</li>
+                                <li>소비자상담 전화번호(구매/배송/사이트 이용 문의): 080-822-3322</li>
+                                <li>제품 문의: 080-022-3332</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- review & Q&A -->
+            <div class="prdBox4">
+                <h2>review</h2>
+                <div class="btnbox">
+                    <input type="button" value="상품 후기 쓰기">
+                    <input type="button" value="모두 보기">
+                </div>
+                <ul class="reviewList">
+                    <li>
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="images/" alt="">
+                            </div>
+                            <div class="con">
+                                <p>샘플을 사용하다가 직접 구매해서 사용하고 있어요.<br>사용 후 피부가 촉촉하면서 윤기가 돌아요. 보습 지속력도 좋아 하루종일 피부가 건조하지 않고 당김이 없어 좋아요.</p>
+                                <div class="bot">
+                                    <p>avo***  2020-03-12  <span>♥♥♥♥♥</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="images/" alt="">
+                            </div>
+                            <div class="con">
+                                <p>우연히 쓰게 돼서 3년쨰 정착중인 크림이에요.<br>겨울철에는 물론이고 여름에도 토너에 이거 하나만 바르면 딱입니다.</p>
+                                <div class="bot">
+                                    <p>sun***  2020-01-27  <span>♥♥♥♥♥</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="page">
+                    <ul>
+                        <li><a href="#"><</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">글로벌 사이트</a></li>
+            </ul>
+            <div class="box">
+                <p>사업자명: 엘오케이(유) | 대표: 크리스티앙 마르코스 아르나이<br>사업자 등록번호: 220-81-73483<br>통신판매업신고: 2012-서울강남-01663<br>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층<br>개인정보관리책임자: 안선지<br>고객 케어 센터: 080-822-3322<br>제품 문의: 080-022-3332</p>
+            </div>
+            <div class="botBox">
+                <div class="copyright">
+                    <p>copyright &copy; 2020 kiehls's Since 1851.</p>
+                </div>
+                <div class="sns">
+                    <div class="insta">
+                        <a href="https://www.instagram.com/kiehlskorea/?hl=ko" target="_blank"><img src="../images/instagramIcon.svg" alt="insta"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/KiehlsKorea/" target="_blank"><img src="../images/facebookIcon.svg" alt="fb"></a>
+                    </div>
+                    <div class="youtube">
+                        <a href="https://www.youtube.com/user/kiehlskorea" target="_blank"><img src="../images/youtubeIcon.svg" alt="youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="mask"></div>
+    <a class="scrollTop"></a>
+    </body>
+</html>

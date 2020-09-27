@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+body {font-family:'Montserrat','Noto Sans KR', sans-serif;}
+p, h1, h2 {margin:0;}
+ul {list-style: none; margin:0; padding:0;}
+a {text-decoration: none; color:inherit; display:block;}
+img {vertical-align: top;}
+
+/* ---------- 모바일 ---------- */
+
+/* 헤더 */
+header {width: 100%; height:100px; background-color: #fff; display: flex; align-items: center; justify-content: space-between; padding:0 5.2777%; box-sizing: border-box; position:fixed; top:0; left:0; z-index: 20; transition:.3s;}
+header.scrollDown {height:60px; border-bottom: 1px solid #eee;}
+header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: center; cursor: pointer;}
+header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;position: relative; z-index: 20;}
+header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
+header .hamburgerMenu .center::after {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; bottom:7px;}
+header h1 {text-indent: -9999px; background: url(../images/kielLogo.png) no-repeat center/cover; width:125px; height:33px;}
+header h1 a {height:100%;}
+header .gnb, header .sub_gnb {display: none;}
+
+/* mobile hamburgerMenu overlay */
+aside {display: flex; position: fixed; top:0; left:-100%; width: 100%; height:100%; z-index: 19;}
+aside .first {width:50%; height:100vh; background-color: #fff; position: absolute; top:0; left:0; z-index: 18; padding:110px 25px 0; box-sizing: border-box; display: flex; flex-direction: column; letter-spacing: -0.3px; font-weight: 300;}
+aside .first .category {font-size: 15px; line-height: 2.5;}
+aside .first .member {font-size:14px; line-height: 2; position: absolute; bottom:150px; left:25px;}
+aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: absolute; top:0; right:0; padding:110px 25px 0; box-sizing: border-box; font-size:15px; line-height: 2.5; letter-spacing: -0.3px; opacity: 0; font-weight: 300;}
+
+/* mobile hamburgerMenu active */
+.hamburgerMenu.activeM div{animation: Menu 300ms ease forwards;}
+.hamburgerMenu.activeM div::before{display: none;}
+.hamburgerMenu.activeM div::after {bottom:0; animation: Menu-after 300ms ease forwards;}
+
+@keyframes Menu {
+    50% {transform:rotate(0deg);}
+    100% {transform:rotate(45deg);}
+}
+@keyframes Menu-after {
+    50% {bottom:0; transform: rotate(0deg);}
+    100% {bottom:0; transform:rotate(90deg);}
+}
+
+/* search box */
+.searchBox {width:100%; position:fixed; top:99px; z-index:17; background-color: #fff; opacity: 0; visibility: hidden; transition: 0.3s;}
+.searchBox.click {opacity: 1; visibility: visible;}
+html.scrollDown .searchBox {top:59px;}
+fieldset {border:none; border-radius: 0; padding:0; width:80%; margin:0 auto; position: relative;}
+fieldset img {position:absolute; display: block;}
+fieldset .search-icon {top:32px;}
+fieldset input {width:100%; padding:0 36px 5px; border:0; line-height: 32px; font-size:15px; color:#7c8389; background-color: #fff; margin:24px auto; border-bottom:1px solid #000; box-sizing: border-box; outline: none;}
+fieldset .close-icon {width:15px; top:32px; right:10px; cursor: pointer;}
+
+/* container */
+.container {color:#555555; padding-top:100px;}
+p {line-height: 21px;}
+
+/* 제품 타이틀 메뉴 */
+.container .titleArea {height: 56px; display: flex; align-items: center; padding:0 5.3333%; border-bottom: 1px solid #F1EDE9;}
+.container .titleArea .return_history {width:29px; height:29px; border:1px solid #F1EDE9;}
+.container .titleArea .return_history a img {display: block; padding:9px 11.5px;}
+.container .titleArea h2 {padding-left:10px; font-size: 1em; color:#000; font-weight: normal;}
+
+
+/* 제품 메뉴 박스 */
+.container .product-menu-box .category-path {display: none;}
+
+/* prdBox1 */
+/* prdBox1 slider */
+.container .prdBox1 .prdImg {width:100%; height:336px; margin:50px 0 45px;}
+.container .prdBox1 .prdImg .swiper-container {width:100%; height:100%;}
+.container .prdBox1 .prdImg ul li:first-child {background: url(images/prdDetail1.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul li:nth-child(2) {background: url(images/prdDetail2.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul li:nth-child(3) {background: url(images/prdDetail3.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul li:last-child {background: url(images/prdDetail4.jpg) no-repeat center/cover;}
+/* prdBox1 info */
+.prdBox1 .prdInfo .infoTop {border-bottom:1px solid #000;}
+.prdBox1 .prdInfo h3 {font-size: 25px; font-weight: normal; color:#000; padding:0 8%;}
+.prdBox1 .prdInfo p {padding:0 8% 40px; font-size: 14px; line-height:25px;}
+.prdBox1 .prdInfo h4 {margin:0; padding:40px 8% 10px; font-weight: normal; color:#000;}
+.prdBox1 .prdInfo h4 + p {padding-bottom: 25px;}
+.prdBox1 form .capacity {padding:0 8% 30px; display: flex; justify-content: space-between;}
+.prdBox1 form .capacity input {width:30%; height:35px; font-size: 13px; outline: none; border:none; background-color: #EFECEA;}
+.prdBox1 form .capacity input.choice {background-color: #C4AD9D; color:#fff;}
+.prdBox1 form .ea_price {padding:0 8% 60px; display: flex; justify-content: space-between;}
+.prdBox1 form .ea_price .ea {width: 30%;}
+.prdBox1 form .ea_price .price {display: flex; justify-content: flex-end; align-items: center;}
+.prdBox1 form .ea_price .price p {padding:0; font-size: 16px; color: #de404f; font-weight: 500;}
+.prdBox1 form .ea_price .price p span {color:#555; font-size:13px;font-weight: normal;}
+.prdBox1 form .ea_price .ea select {width:100%; font-size: 13px; outline:none; border-color:#555; padding:9px 40px 9px 10px; appearance: none; background: url(images/selectBtn.svg) no-repeat 85% 50%;}
+.prdBox1 form .cart {width:84%; margin:0 8%; background-color: transparent; outline: none; border:1px solid #de404f; color:#de404f; text-transform: uppercase; padding:15px;}
+.prdBox1 form .cart:active {background-color: #de404f; color:#fff;}
+
+/* prdBox2 img & detail explain */
+.prdBox2 {margin-top:145px;}
+.prdBox2 .left .img1 {width:100%; height:467px; text-indent: -9999px; background: url(images/img1.jpg) no-repeat center/cover; margin-bottom: 45px;}
+.prdBox2 .left p, .prdBox2 .right p {padding:0 8% 30px; font-size: 14px; line-height: 25px; letter-spacing: -0.3px;}
+.prdBox2 .left p:nth-of-type(2), .prdBox2 .right p:nth-of-type(2) {padding-bottom:124px;}
+.prdBox2 .right .img2 {width:100%; height:560px; text-indent: -9999px; background: url(images/img2.jpg) no-repeat center/cover; margin-bottom: 45px;}
+
+/* prdBox3 Menu */
+.prdBox3 {margin-bottom: 150px;}
+h2 {text-align: center; font-size: 16px; font-weight: 500; text-transform: uppercase; margin-bottom: 15px; color:#000;}
+.prdBox3 > p {text-align: center; font-size: 14px; letter-spacing: -0.3px; line-height: 25px; margin-bottom:35px;}
+.prdBox3 > ul > li:first-child {border-top: 1px solid #000;}
+.prdBox3 > ul > li {border-bottom: 1px solid #000; padding:15px 8%; font-size: 14px;}
+.prdBox3 > ul > li::before {content: '+'; font-size:18px; float:right;}
+.prdBox3 ul li .txt {line-height: 25px; padding:20px 10px;}
+.prdBox3 .menu li.on::before {content: '-';}
+
+/* prdBox4 review */
+.prdBox4 h2 {margin-bottom:35px;}
+.prdBox4 .btnbox {padding:0 8% 20px; display: flex; justify-content: space-between;}
+.prdBox4 .btnbox input {width:48%; height:35px; outline: none; border:none; color:#fff; font-size: 13px;}
+.prdBox4 .btnbox input:nth-of-type(1) {background-color: #5D544B;}
+.prdBox4 .btnbox input:nth-of-type(2) {background-color: #C4AD9D;}
+.prdBox4 .reviewList li {border-top:1px solid #eee; font-size: 14px; letter-spacing: -0.3px;}
+.prdBox4 .reviewList li:last-child {border-bottom:1px solid #eee;}
+.prdBox4 .reviewList li a {height:85px; padding:20px 30px;}
+.prdBox4 .reviewList li a .thumb {display: none;}
+.prdBox4 .reviewList li a .con {display: flex; height:100%; flex-direction: column; justify-content: space-around;}
+.prdBox4 .reviewList li a .con p {height:18px; overflow: hidden;}
+.prdBox4 .reviewList li a .con .bot span {padding:0 5px; color:#de404f;}
+
+/* page */
+.page {padding:20px 8% 90px;}
+.page ul {display: flex; justify-content: center;}
+.page ul li {padding:0 10px;}
+
+/* footer */
+footer {padding: 50px 35px 0; font-size: 14px; font-family: 'Noto Sans KR', sans-serif; border-top:1px solid #000;}
+footer ul {display: flex; font-size: 14px; margin-bottom:35px; font-weight: 500;}
+footer ul li {padding-right:20px;}
+footer ul li:hover {color:#de404f;}
+footer .box {margin-bottom: 18px;}
+footer .box p {line-height:1.8; letter-spacing: -0.3px;}
+footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capitalize;}
+/* sns */
+.sns {display: flex; margin-bottom:47px; align-items: center;}
+.sns div {margin-right:18px;}
+
+/* 스크롤 탑 */
+.scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(../images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
+
+/* hamburgerMenu mask */
+.mask {position: fixed; top:0; left:0; width:100%; height:100%; background-color: #4a3939; z-index: 16; opacity: 0; visibility: hidden; transition:.5s ease-in-out;}
+html.activeM .mask {opacity: 0.5; visibility: visible;}
+
+/* ---------- pc ---------- */
+@media screen and (min-width:1339px) {
+    /* header */
+    header {height:160px; font-size: 15px; font-weight: 500;}
+    header.scrollDown {height:80px; background-color: #fff; border-bottom: 1px solid #eee;}
+    header h1 {width:220px; height:58px; position: absolute; left:50%; transform: translateX(-50%);}
+    header .hamburgerMenu {display:none;}
+
+    header .gnb, header .sub_gnb {display: flex;}
+    header .gnb li {margin-right:45px;}
+    header .gnb > li > a {height: 160px; line-height: 160px;}
+    header .gnb li:hover > a{color:#de404f;}
+
+    header .right {display: flex; align-items: center;}
+    header .right a {margin-right:45px;}
+    header .right .sub_gnb li:hover {color:#de404f;}
+    header .right .sub_gnb li:last-child a {margin-right: 0;}
+
+    /* header 호버시 나타나는 소메뉴 */
+    .sub {width:100%; background-color: #fff; display: flex; align-items: center; padding:10px 5.2777%; position:fixed; top:120px; left:0; z-index:999; font-size:15px;}
+    .sub li{padding:10px 0; font-weight: normal;}
+    .sub li:first-child {font-weight: bold;}
+    html.scrollDown .sub {top:80px;}
+
+    /* search box */
+    .searchBox {top:160px;}
+    html.scrollDown .searchBox {top:80px;}
+    fieldset {width:50%;}
+
+}
