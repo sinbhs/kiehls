@@ -41,8 +41,8 @@ aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: abso
 }
 
 /* search box */
-.searchBox {width:100%; position:fixed; top:99px; z-index:17; background-color: #fff; opacity: 0; transition: 0.3s;}
-.searchBox.click {opacity: 1;}
+.searchBox {width:100%; position:fixed; top:99px; z-index:17; background-color: #fff; opacity: 0; visibility: hidden; transition: 0.3s;}
+.searchBox.click {opacity: 1; visibility: visible;}
 html.scrollDown .searchBox {top:59px;}
 fieldset {border:none; border-radius: 0; padding:0; width:80%; margin:0 auto; position: relative;}
 fieldset img {position:absolute; display: block;}
