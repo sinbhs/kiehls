@@ -59,22 +59,38 @@ p {line-height: 21px;}
 .container .product-menu-box .titleArea {height: 56px; display: flex; align-items: center; padding:0 5.3333%; border-bottom: 1px solid #F1EDE9;}
 .container .product-menu-box .titleArea .return_history {width:29px; height:29px; border:1px solid #F1EDE9;}
 .container .product-menu-box .titleArea .return_history a img {display: block; padding:9px 11.5px;}
-.container .product-menu-box .titleArea h2 {padding-left:10px; font-size: 1.1em; color:#000; font-weight: normal;}
+.container .product-menu-box .titleArea h2 {padding-left:10px; font-size: 1em; color:#000; font-weight: normal;}
 
-.product-menu-box .product-sort-box {width:100%;}
+.product-menu-box .product-sort-box {width:100%; margin-bottom: 20px;}
 .product-menu-box .product-sort-box form {display: flex; justify-content: flex-end; padding: 22px 3.7333%;}
-.product-menu-box .product-sort-box form select {outline: none; border-color: #F1EDE9; padding:9px 40px 9px 10px; appearance: none; background:url(images/selectBtn.svg) no-repeat 85% 50%;}
+.product-menu-box .product-sort-box form select {font-size:0.875em; outline: none; border-color: #F1EDE9; padding:9px 40px 9px 10px; appearance: none; background:url(images/selectBtn.svg) no-repeat 85% 50%;}
 
 /* 메뉴 카테고리 스와이퍼 */
-.product-menu-box .menuCategory {width: 100%; height: 100%; border-bottom: 1px solid #F1EDE9;font-size: 1em;}
+.product-menu-box .menuCategory {width: 100%; height: 100%; border-bottom: 1px solid #F1EDE9;font-size: 0.875em;}
 .product-menu-box .swiper-wrapper {width:100%; height:50px;}
 .product-menu-box .swiper-wrapper .swiper-slide {width:33.33%; display: flex; align-items: center; justify-content: center;}
 .product-menu-box .swiper-wrapper .swiper-slide.focus {color:#000; font-weight: 500;}
 .product-menu-box .menuCategory .category-path {display: none;}
 
+/* 제품 리스트 박스 */
+.prd-list-box {width: 100%; padding:0 1.0666%; box-sizing: border-box;}
+.prd-list-box .prdList {display: flex; flex-wrap: wrap;}
+.prd-list-box .prdList li {width:calc(50% - 1.0666% / 2); margin-bottom: 25px;}
+.prd-list-box .prdList li:nth-child(2n+1) {padding-right:1.0666%;}
+.prd-list-box .prdList li:last-child {display: none;}
+.prd-list-box .prdList li a .thumbnail {margin-bottom:17px;}
+.prd-list-box .prdList li a .thumbnail img {width:100%;}
+.prd-list-box .prdList li a .description {text-align: center; font-size:0.9em; color:#000;}
+.prd-list-box .prdList li a .description span {display:block; height: 44px; font-weight: 400; padding-bottom:5px;}
+
+/* 페이지, 더보기 */
+.container .page {border-bottom: 1px solid #000;}
+.container .page ul {display: none;}
+.container .page .viewmoreBtn {font-size: 0.813em; color:#de404f; text-transform: uppercase; font-weight: 500; border:1px solid #de404f; border-radius:40px; padding:15px 25px; margin:40px auto 50px; text-align: center; width:100px;}
+.container .page .viewmoreBtn:active {background-color: #de404f; color:#fff;}
 
 /* footer */
-footer {padding: 0 35px; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
+footer {padding: 50px 35px 0; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
 footer ul {display: flex; font-size: 14px; margin-bottom:35px; font-weight: 500;}
 footer ul li {padding-right:20px;}
 footer ul li:hover {color:#de404f;}
@@ -86,7 +102,7 @@ footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capital
 .sns div {margin-right:18px;}
 
 /* 스크롤 탑 */
-.scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
+.scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(../images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
 
 /* hamburgerMenu mask */
 .mask {position: fixed; top:0; left:0; width:100%; height:100%; background-color: #4a3939; z-index: 16; opacity: 0; visibility: hidden; transition:.5s ease-in-out;}

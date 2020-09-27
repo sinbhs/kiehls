@@ -82,10 +82,55 @@ $(function(){
         },
       });
 
-    //Category 선택 마다 제품 보이기
+    // Category 선택 마다 제품 보이기
+    // category 변경
     $('.swiper-slide').eq(0).addClass('focus');
+
     $('.swiper-slide').on('click',function(){
         $('.swiper-slide').removeClass('focus');
         $(this).addClass('focus');
+    });
+    // 카테고리에 따른 컨텐츠 변경
+    // 모든 스킨
+    $('.swiper-slide').eq(0).on('click',function(){
+        $('.prdList li').fadeIn();
+        $('.prdList li:nth-child(2)').css('padding-right','0');
+        $('.prdList li:nth-child(3)').css('padding-right','1.0666%');
+        $('.prdList li:nth-child(5)').css('padding-right','1.0666%');
+        $('.prdList li:last-child').hide();
+    });
+    // 클렌저&스크럽
+    $('.swiper-slide').eq(1).on('click',function(){
+        $('.prdList li').fadeOut();
+        $('.prdList .cleansing').fadeIn();
+    });
+    // 에센스
+    $('.swiper-slide').eq(2).on('click',function(){
+        $('.prdList li').fadeOut();
+        $('.prdList .essence').fadeIn();
+        $('.prdList li:last-child').show();
+        $('.prdList li:nth-child(2)').css('padding-right','1.0666%');
+        $('.prdList li:nth-child(5)').css('padding-right','0');
+    });
+    // 마스크
+    $('.swiper-slide').eq(3).on('click',function(){
+        $('.prdList li').fadeOut();
+        $('.prdList .skinMask').fadeIn();
+    });
+    // 토너
+    $('.swiper-slide').eq(4).on('click',function(){
+        $('.prdList li').fadeOut();
+        $('.prdList .toner').fadeIn();
+    });
+    // 크림
+    $('.swiper-slide').eq(5).on('click',function(){
+        $('.prdList li').fadeOut();
+        $('.prdList .cream').fadeIn();
+        $('.prdList li:nth-child(3)').css('padding',0);
+    });
+
+    //view more 누르면 나타나는 9번째 제품
+    $('.viewmoreBtn').on('click',function(){
+        $('.prdList li:last-child').show();
     });
 });
