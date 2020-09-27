@@ -93,7 +93,7 @@ $(function(){
     // 카테고리에 따른 컨텐츠 변경
     // 모든 스킨
     $('.swiper-slide').eq(0).on('click',function(){
-        $('.prdList li').fadeIn();
+        $('.prdList li').fadeIn('fast');
         $('.prdList li:nth-child(2)').css('padding-right','0');
         $('.prdList li:nth-child(3)').css('padding-right','1.0666%');
         $('.prdList li:nth-child(5)').css('padding-right','1.0666%');
@@ -101,31 +101,31 @@ $(function(){
     });
     // 클렌저&스크럽
     $('.swiper-slide').eq(1).on('click',function(){
-        $('.prdList li').fadeOut();
-        $('.prdList .cleansing').fadeIn();
+        $('.prdList li').fadeOut('fast');
+        $('.prdList .cleansing').fadeIn('fast');
     });
     // 에센스
     $('.swiper-slide').eq(2).on('click',function(){
-        $('.prdList li').fadeOut();
-        $('.prdList .essence').fadeIn();
+        $('.prdList li').fadeOut('fast');
+        $('.prdList .essence').fadeIn('fast');
         $('.prdList li:last-child').show();
         $('.prdList li:nth-child(2)').css('padding-right','1.0666%');
         $('.prdList li:nth-child(5)').css('padding-right','0');
     });
     // 마스크
     $('.swiper-slide').eq(3).on('click',function(){
-        $('.prdList li').fadeOut();
-        $('.prdList .skinMask').fadeIn();
+        $('.prdList li').fadeOut('fast');
+        $('.prdList .skinMask').fadeIn('fast');
     });
     // 토너
     $('.swiper-slide').eq(4).on('click',function(){
-        $('.prdList li').fadeOut();
-        $('.prdList .toner').fadeIn();
+        $('.prdList li').fadeOut('fast');
+        $('.prdList .toner').fadeIn('fast');
     });
     // 크림
     $('.swiper-slide').eq(5).on('click',function(){
-        $('.prdList li').fadeOut();
-        $('.prdList .cream').fadeIn();
+        $('.prdList li').fadeOut('fast');
+        $('.prdList .cream').fadeIn('fast');
         $('.prdList li:nth-child(3)').css('padding',0);
     });
 
