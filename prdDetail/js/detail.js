@@ -82,6 +82,11 @@ $(function(){
         $('.capacity input').removeClass('choice');
         $(this).addClass('choice');
     })
+    
+    //add cart 클릭 시 안내창
+    $('.cart').on('click',function(){
+        alert('장바구니에 상품이 담겼습니다.')
+    });
 
     //menu
     $('.menu li .txt').hide();

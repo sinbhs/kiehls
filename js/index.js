@@ -51,12 +51,12 @@ $(function(){
         if(menu) {
             $('aside').animate({left:0},300);
             $('aside li').eq(0).on('click',function(){
-                $('aside .second').css({opacity:0});
-                $('aside .brand').animate({opacity:1});
+                $('aside .second').css({opacity:0,visiblity:0});
+                $('aside .brand').animate({opacity:1,visiblity:1});
             });
             $('aside li').eq(1).on('click',function(){
-                $('aside .second').css({opacity:0});
-                $('aside .prd').animate({opacity:1});
+                $('aside .second').css({opacity:0, visiblity:0});
+                $('aside .prd').animate({opacity:1, visiblity:1});
             });
         } else {
             $('aside').animate({left:'-100%'},200);
