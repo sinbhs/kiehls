@@ -58,7 +58,7 @@ p {line-height: 21px;}
 .container .titleArea {height: 56px; display: flex; align-items: center; padding:0 5.3333%; border-bottom: 1px solid #F1EDE9;}
 .container .titleArea .return_history {width:29px; height:29px; border:1px solid #F1EDE9;}
 .container .titleArea .return_history a img {display: block; padding:9px 11.5px;}
-.container .titleArea h2 {padding-left:10px; font-size: 1em; color:#000; font-weight: normal;}
+.container .titleArea h2 {padding-left:10px; font-size: 1em; color:#000; font-weight: normal; margin-bottom:0;}
 
 
 /* 제품 메뉴 박스 */
@@ -195,12 +195,12 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .prdBox1 .prdInfo p {padding:0 0 28px; font-size: 16px; line-height: 28px;}
     .prdBox1 .prdInfo h4 {padding:30px 0 15px;}
     .prdBox1 form .capacity {padding: 0 0 35px;}
-    .prdBox1 form .capacity input {height:55px; font-size: 16px;}
+    .prdBox1 form .capacity input {height:55px; font-size: 16px; cursor: pointer;}
     .prdBox1 form .ea_price {padding: 0 0 65px;}
-    .prdBox1 form .ea_price .ea select {height:55px; font-size: 16px;}
+    .prdBox1 form .ea_price .ea select {height:55px; font-size: 16px; cursor: pointer;}
     .prdBox1 form .ea_price .price p {font-size: 25px;}
     .prdBox1 form .ea_price .price p span {font-size: 16px;}
-    .prdBox1 form .cart {width:100%; margin:0; padding:20px;}
+    .prdBox1 form .cart {width:100%; margin:0; padding:20px; cursor: pointer; transition:0.3s;}
     .prdBox1 form .cart:hover {background-color: #de404f; color:#fff;}
     /* box2 img & detail explain */
     .prdBox2 {margin-top:150px; display: flex;}
@@ -217,7 +217,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .prdBox3 {margin:200px 0 290px;}
     h2 {font-size:25px; font-weight: 500; margin-bottom: 35px;}
     .prdBox3 > p br {display: none;}
-    .prdBox3 > ul > li {padding:26px 4.7008%; font-size: 16px;}
+    .prdBox3 > ul > li {padding:26px 4.7008%; font-size: 16px; cursor: pointer;}
     .prdBox3 > ul > li::before {font-size: 20px;}
 
     /* prdBox4 Review */
@@ -227,7 +227,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .prdBox4 .reviewList li a .con {padding:20px;}
     .prdBox4 .reviewList li a .con p {height:60px;}
     .prdBox4 .btnbox {padding:74px 0 94px;justify-content: flex-end;}
-    .prdBox4 .btnbox input {width:195px; height:50px;}
+    .prdBox4 .btnbox input {width:195px; height:50px; cursor:pointer;}
     .prdBox4 .btnbox input:nth-of-type(1) {margin-right:34px;}
     .prdBox4 .page {display: none;}
 
