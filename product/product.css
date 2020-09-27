@@ -79,6 +79,8 @@ p {line-height: 21px;}
 .prd-list-box .prdList li:last-child {display: none;}
 .prd-list-box .prdList li a .thumbnail {margin-bottom:17px;}
 .prd-list-box .prdList li a .thumbnail img {width:100%;}
+.prd-list-box .prdList li a .thumbnail .prdHover {display: none;}
+.prd-list-box .prdList li a .thumbnail .searchIcon, .prd-list-box .prdList li a .thumbnail .shopB {display: none;}
 .prd-list-box .prdList li a .description {text-align: center; font-size:0.9em; color:#000;}
 .prd-list-box .prdList li a .description span {display:block; height: 44px; font-weight: 400; padding-bottom:5px;}
 
@@ -158,7 +160,15 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .prd-list-box {padding:0;}
     .prd-list-box .prdList li {width: 33.3333%; height:640px; padding:20px; box-sizing: border-box;}
     .prd-list-box .prdList li:last-child {display: block;}
-    .prd-list-box .prdList li a .thumbnail {margin-bottom:25px;}
+    .prd-list-box .prdList li a .thumbnail {margin-bottom:25px; position: relative;}
+    .prd-list-box .prdList li a .thumbnail .prdHover {display: block; position: absolute; top:0; left:0; opacity: 0;}
+    .prd-list-box .prdList li:hover a .thumbnail .prdHover {opacity: 1;}
+    .prd-list-box .prdList li a .thumbnail .searchIcon, .prd-list-box .prdList li a .thumbnail .shopB {display: block; width:37px; height:37px; border-radius: 50%; position: absolute; transition:0.3s; opacity: 0; visibility: 0; cursor: pointer;}
+    .prd-list-box .prdList li a .thumbnail .searchIcon {top:50%; transform: translateY(-50%); left:38%; background: url(images/learnMoreIcon.svg) no-repeat center #fff;}
+    .prd-list-box .prdList li a .thumbnail .shopB {top:50%; transform: translateY(-50%); right:38%; background: url(images/shoppingBagIcon.svg) no-repeat center #fff;}
+
+    .prd-list-box .prdList li.hover a .thumbnail .searchIcon,.prd-list-box .prdList li.hover a .thumbnail .shopB {opacity:1; visibility: 1;}
+
     .prd-list-box .prdList li a .description {font-size: 16px;}
     .prd-list-box .prdList li a .description p br{display: none;}
     .prd-list-box .prdList li a .description span {height:100%;padding-bottom: 20px;}

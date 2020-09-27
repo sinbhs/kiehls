@@ -153,6 +153,18 @@ $(function(){
         $('.category-path ol li').eq(2).text('크림');
     });
 
+    //mouseenter 자세히 보기, 장바구니 버튼
+    $('.prdList li').hover(function(){
+        $(this).addClass('hover');
+    },function(){
+        $(this).removeClass('hover');
+    });
+    //장바구니 버튼 클릭
+    $('.shopB').on('click',function(e){
+        confirm('장바구니에 상품이 담겼습니다.');
+        e.preventDefault();
+    });
+
     //view more 누르면 나타나는 9번째 제품
     $('.menuCategory ul li').on('click',function(){
         $('.prdList li:last-child').show();
