@@ -37,22 +37,23 @@
         
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <!-- animation js -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
         <!-- dotdotdot js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.1.0/dotdotdot.js"></script>
         <!-- swiper js -->
         <script src="common/swiper-bundle.min.js"></script>
         <!-- index js -->
         <script src="js/index.js"></script>
-
-        <!-- animation js -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
     </head>
 
     <body>
         <header>
+            <!-- 모바일 햄버거 메뉴 -->
             <div class="hamburgerMenu">
                 <div class="center"></div>
             </div>
+            <!-- 메인 네비게이션 바 -->
             <ul class="gnb">
                 <li>
                     <a href="#">브랜드 소개</a>
@@ -64,12 +65,12 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">제품 소개</a>
+                <li><a href="product/product.html">제품 소개</a>
                     <div class="sub_menu2 sub">
                         <ul>
                             <li>by Category</li>
                             <li><a href="#">신제품</a></li>
-                            <li><a href="#">베스트 셀러</a></li>
+                            <li><a href="product/product.html">베스트 셀러</a></li>
                             <li><a href="#">스킨 케어</a></li>
                             <li><a href="#">맨 케어</a></li>
                             <li><a href="#">바디 & 헤어</a></li>
@@ -79,7 +80,9 @@
                 </li>
                 <li><a href="#">이벤트</a></li>
             </ul>
+            <!-- 로고 -->
             <h1><a href="index.html">kiehl's Logo</a></h1>
+            <!-- 검색, 멤버, 장바구니 내비게이션 -->
             <div class="right">
                 <a href="#"><img src="images/searchIcon.svg" alt="search"></a>
                 <ul class="sub_gnb">
@@ -89,6 +92,7 @@
                 </ul>
             </div>
         </header>
+        <!-- 검색창 -->
         <div class="searchBox">
             <form id="searchBarform">
                 <fieldset>
@@ -98,6 +102,7 @@
                 </fieldset>
             </form>
         </div>
+        <!-- 햄버거 메뉴 overlay -->
         <aside>
             <div class="first">
                 <ul class="category">
@@ -120,7 +125,7 @@
             <div class="prd second">
                 <ul>
                     <li><a href="#">신제품</a></li>
-                    <li><a href="#">베스트 셀러</a></li>
+                    <li><a href="product/product.html">베스트 셀러</a></li>
                     <li><a href="#">스킨 케어</a></li>
                     <li><a href="#">맨 케어</a></li>
                     <li><a href="#">바디 & 헤어</a></li>
@@ -128,6 +133,7 @@
                 </ul>
             </div>
         </aside>
+        <!-- 컨텐츠 컨테이너 -->
         <div class="container">
             <!-- 배너 -->
             <section class="bannerSection swiper-container">

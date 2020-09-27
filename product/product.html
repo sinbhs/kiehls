@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>키엘 공식 온라인 몰</title>
+        <meta name="description" content="온라인 몰 혜택, 프로모션, 스킨케어, 바디케어, 헤어, 향수 등 제품소개">
+        <meta name="keywords" content="키엘, 공식 온라인 몰, 온라인몰 혜택 Kiehl's">
+        <meta property="og:title" content="키엘 공식 온라인 몰">
+        <meta property="og:url" content="http://sinbhs.dothome.co.kr/kiehlsWebpage/product/product.html">
+        <meta property="og:image" content="https://www.kiehls.co.kr/on/demandware.static/-/Sites-kiehls-kr-Library/ko_KR/dwb7ccbcce/170309-og-image.jpg">
+        <meta property="og:description" content="온라인 몰 혜택, 프로모션, 스킨케어, 바디케어, 헤어, 향수 등 제품소개">
+        <!-- twitter -->
+        <meta name="twitter:card" content="키엘 공식 온라인 몰">
+        <meta name="twitter:title" content="키엘 공식 온라인 몰">
+        <meta name="twitter:url" content="http://sinbhs.dothome.co.kr/kiehlsWebpage/product/product.html">
+        <meta name="twitter:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZUYjJ%2FbtqJjFGvYnX%2FF4iKbvfAOw3pqucAxz499K%2Fimg.jpg">
+        <meta name="twitter:description" content="온라인 몰 혜택, 프로모션, 스킨케어, 바디케어, 헤어, 향수 등 제품소개">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- normalize css -->
+        <link rel="stylesheet" href="common/normalize.css">
+        <!-- font css -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="product.css">
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script> -->
+        <script src="js/product.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- 모바일 햄버거 메뉴 -->
+            <div class="hamburgerMenu">
+                <div class="center"></div>
+            </div>
+            <!-- 메인 네비게이션 바 -->
+            <ul class="gnb">
+                <li>
+                    <a href="#">브랜드 소개</a>
+                    <div class="sub_menu1 sub">
+                        <ul>
+                            <li>about Brand</li>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">매장 안내</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">제품 소개</a>
+                    <div class="sub_menu2 sub">
+                        <ul>
+                            <li>by Category</li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">베스트 셀러</a></li>
+                            <li><a href="#">스킨 케어</a></li>
+                            <li><a href="#">맨 케어</a></li>
+                            <li><a href="#">바디 & 헤어</a></li>
+                            <li><a href="#">반려동물</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <!-- 로고 -->
+            <h1><a href="../index.html">kiehl's Logo</a></h1>
+            <!-- 검색, 멤버, 장바구니 내비게이션 -->
+            <div class="right">
+                <a href="#"><img src="../images/searchIcon.svg" alt="search"></a>
+                <ul class="sub_gnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#"><img src="../images/shoppingBag.svg" alt="shoppingBag"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- 검색창 -->
+        <div class="searchBox">
+            <form id="searchBarform">
+                <fieldset>
+                    <img src="../images/searchIcon.svg" alt="search icon" class="search-icon">
+                    <input type="text" id="keyword" placeholder="Type here to search">
+                    <img src="../images/closebtn.png" alt="close-icon" class="close-icon">
+                </fieldset>
+            </form>
+        </div>
+        <!-- 햄버거 메뉴 overlay -->
+        <aside>
+            <div class="first">
+                <ul class="category">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">제품 소개</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+                <ul class="member">
+                    <li><a href="#">로그인/회원가입</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="brand second">
+                <ul>
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                </ul>
+            </div>
+            <div class="prd second">
+                <ul>
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="product/product.html">베스트 셀러</a></li>
+                    <li><a href="#">스킨 케어</a></li>
+                    <li><a href="#">맨 케어</a></li>
+                    <li><a href="#">바디 & 헤어</a></li>
+                    <li><a href="#">반려동물</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- 컨텐츠 컨테이너 -->
+        <div class="container">
+
+        </div>
+        <!-- footer -->
+        <footer>
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">글로벌 사이트</a></li>
+            </ul>
+            <div class="box">
+                <p>사업자명: 엘오케이(유) | 대표: 크리스티앙 마르코스 아르나이<br>사업자 등록번호: 220-81-73483<br>통신판매업신고: 2012-서울강남-01663<br>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층<br>개인정보관리책임자: 안선지<br>고객 케어 센터: 080-822-3322<br>제품 문의: 080-022-3332</p>
+            </div>
+            <div class="botBox">
+                <div class="copyright">
+                    <p>copyright &copy; 2020 kiehls's Since 1851.</p>
+                </div>
+                <div class="sns">
+                    <div class="insta">
+                        <a href="https://www.instagram.com/kiehlskorea/?hl=ko" target="_blank"><img src="../images/instagramIcon.svg" alt="insta"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/KiehlsKorea/" target="_blank"><img src="../images/facebookIcon.svg" alt="fb"></a>
+                    </div>
+                    <div class="youtube">
+                        <a href="https://www.youtube.com/user/kiehlskorea" target="_blank"><img src="../images/youtubeIcon.svg" alt="youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="mask"></div>
+    <a class="scrollTop"></a>
+    </body>
+</html>

@@ -168,7 +168,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     header .gnb > li > a {height: 160px; line-height: 160px;}
     header .gnb li:hover > a{color:#de404f;}
 
-    header .right {display: flex;}
+    header .right {display: flex; align-items: center;}
     header .right a {margin-right:45px;}
     header .right .sub_gnb li:hover {color:#de404f;}
     header .right .sub_gnb li:last-child a {margin-right: 0;}

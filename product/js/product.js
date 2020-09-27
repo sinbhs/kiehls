@@ -65,72 +65,6 @@ $(function(){
         
     });
 
-    //메인 배너 banner swiper
-    var swiper = new Swiper('.swiper-container',{
-        autoplay: {delay:3000},//자동 슬라이드
-        speed:2000,//스피드
-        pagination: {el: '.swiper-pagination', type: 'bullets', clickable :true}
-    })
-    
-
-    //베스트 셀러 scroll swiper
-    var scroll = new Swiper('.scroll_container',{
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: false,
-            draggable:true
-          },
-        speed:500,
-        grabCursor: true,
-        //Responsive breakpoints
-        breakpoints: {
-            //when window width is >= 1440
-            1440: {
-                slidesPerView:3
-            }
-        }
-    });
-
-    //best seller focus
-    $('.prd_tab li').on('click',function(){
-        //메인 분류 명
-        $('.prd_tab li').removeClass('focus');
-        $(this).addClass('focus');
-        
-        /*
-        let wd = $(window).width();
-        if(wd >= 1440) {
-            //아래 설명
-            $('.prd_tab li p').stop().slideUp();
-            $(this).children('p').stop().slideDown();
-        }
-        */
-    });
-
-    /*
-    //화면비율
-    $(window).on('resize',function(){
-        var wd = $(window).width();
-        if(wd >= 0 && wd < 1339) {
-            var scroll = new Swiper('.scroll_container',{
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    hide: false,
-                }
-            });
-        }
-        if(wd >= 1440){
-            var scroll = new Swiper('.scroll_container',{
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    hide: false,
-                },
-                slidesPerView:3
-            });
-        }
-    });
-    */
-
     //scrollTop 버튼 클릭 시
     $('.scrollTop').on('click',function(){
         $('html,body').animate({
@@ -139,7 +73,4 @@ $(function(){
     });
 
     
-
-    //문단 말줄임
-    $('.con p').dotdotdot();
 });
