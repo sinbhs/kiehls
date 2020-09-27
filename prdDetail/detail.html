@@ -140,22 +140,25 @@
                 <div class="category-path">
                     <ol>
                         <li><a href="../index.html">홈</a></li>
-                        <li><a href="product.html">스킨 케어</a></li>
+                        <li><a href="../product/product.html">스킨 케어</a></li>
                         <li><a href="#">모든 스킨</a></li>
+                        <li><a href="#">울트라 페이셜 크림</a></li>
                     </ol>
                 </div>
             </div>
             <!-- 제품 박스1 -->
             <div class="prdBox1">
-                <div class="prdImg swiper-container">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide"></li>
-                        <li class="swiper-slide"></li>
-                        <li class="swiper-slide"></li>
-                        <li class="swiper-slide"></li>
-                    </ul>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                <div class="prdSlide">
+                    <div class="prdImg swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"></li>
+                            <li class="swiper-slide"></li>
+                            <li class="swiper-slide"></li>
+                            <li class="swiper-slide"></li>
+                        </ul>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
                 <div class="prdInfo">
                     <div class="infoTop">
@@ -190,8 +193,10 @@
             <div class="prdBox2">
                 <div class="left">
                     <div class="img1">img1</div>
-                    <p>독특하고 가벼운 질감과 24시간 지속되는 수분 공급으로 <br>피부를 부드럽고 매끄럽게 바꿔주며 눈에 띄게 건강해진 피부를 느껴 볼 수 있습니다.</p>
-                    <p>올리브의 스쿠알란 성분이 함유된 기름지지 않은 가벼운 보습제로 피부의 가장 건조한 부위에서도 촉촉한 피부를 유지합니다.</p>
+                    <div class="txtbox">
+                        <p>독특하고 가벼운 질감과 24시간 지속되는 수분 공급으로 <br>피부를 부드럽고 매끄럽게 바꿔주며 눈에 띄게 건강해진 피부를 느껴 볼 수 있습니다.</p>
+                        <p>올리브의 스쿠알란 성분이 함유된 기름지지 않은 가벼운 보습제로 피부의 가장 건조한 부위에서도 촉촉한 피부를 유지합니다.</p>
+                    </div>
                 </div>
                 <div class="right">
                     <div class="img2">img2</div>
@@ -201,7 +206,7 @@
             </div>
             <div class="prdBox3">
                 <h2>product detail</h2>
-                <p>키엘 공식 온라인 몰의 제품 정보는<br>전자상거래 등에서의 상품정보제공 고시에 따라 작성되었습니다.</p>
+                <p>키엘 공식 온라인 몰의 제품 정보는 <br>전자상거래 등에서의 상품정보제공 고시에 따라 작성되었습니다.</p>
                 <ul class="menu">
                     <li>
                         <span>사용 방법</span>
@@ -253,45 +258,49 @@
             <!-- review & Q&A -->
             <div class="prdBox4">
                 <h2>review</h2>
-                <div class="btnbox">
-                    <input type="button" value="상품 후기 쓰기">
-                    <input type="button" value="모두 보기">
+                <div class="reversebox">
+                    <div class="btnbox">
+                        <input type="button" value="상품 후기 쓰기">
+                        <input type="button" value="모두 보기">
+                    </div>
+                    <div class="reviewBox">
+                        <ul class="reviewList">
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="images/review1.jpg" alt="review1">
+                                    </div>
+                                    <div class="con">
+                                        <p>샘플을 사용하다가 직접 구매해서 사용하고 있어요.<br>사용 후 피부가 촉촉하면서 윤기가 돌아요. 보습 지속력도 좋아 하루종일 피부가 건조하지 않고 당김이 없어 좋아요.</p>
+                                        <div class="bot">
+                                            <p>avo***  2020-03-12  <span>♥♥♥♥♥</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="images/review2.jpg" alt="review2">
+                                    </div>
+                                    <div class="con">
+                                        <p>우연히 쓰게 돼서 3년쨰 정착중인 크림이에요.<br>겨울철에는 물론이고 여름에도 토너에 이거 하나만 바르면 딱입니다.</p>
+                                        <div class="bot">
+                                            <p>sun***  2020-01-27  <span>♥♥♥♥♥</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="reviewList">
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <img src="images/" alt="">
-                            </div>
-                            <div class="con">
-                                <p>샘플을 사용하다가 직접 구매해서 사용하고 있어요.<br>사용 후 피부가 촉촉하면서 윤기가 돌아요. 보습 지속력도 좋아 하루종일 피부가 건조하지 않고 당김이 없어 좋아요.</p>
-                                <div class="bot">
-                                    <p>avo***  2020-03-12  <span>♥♥♥♥♥</span></p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <img src="images/" alt="">
-                            </div>
-                            <div class="con">
-                                <p>우연히 쓰게 돼서 3년쨰 정착중인 크림이에요.<br>겨울철에는 물론이고 여름에도 토너에 이거 하나만 바르면 딱입니다.</p>
-                                <div class="bot">
-                                    <p>sun***  2020-01-27  <span>♥♥♥♥♥</span></p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="page">
-                    <ul>
-                        <li><a href="#"><</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">></a></li>
-                    </ul>
-                </div>
+                    <div class="page">
+                        <ul>
+                            <li><a href="#"><</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">></a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
         <!-- footer -->

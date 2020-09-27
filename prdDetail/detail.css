@@ -174,4 +174,72 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     html.scrollDown .searchBox {top:80px;}
     fieldset {width:50%;}
 
+    /* 제품 메뉴박스 */
+    .container .product-menu-box .titleArea {padding:0; margin-top:43px; border:0;}
+    .container .product-menu-box .titleArea .return_history {display: none;}
+    .container .product-menu-box .titleArea h2 {text-indent: -9999px;}
+    .container .product-menu-box .category-path {display: flex; justify-content: flex-end; align-items: center;}
+    .product-menu-box .category-path ol {display: flex; margin:0; padding:0; list-style: none;}
+    .product-menu-box .category-path ol li{padding-left:15px; margin-left:10px; background: url(images/path.svg) no-repeat 0 50%;}
+    .product-menu-box .category-path ol li:first-child{background:none;}
+
+    /* container */
+    .container {padding:160px 10.9375% 0;}
+
+    /* prdBox1 Img & Info */
+    .prdBox1 {display: flex; padding:40px;}
+    .container .prdSlide {width:50%; display: flex; align-items: center;}
+    .container .prdBox1 .prdImg {width:462px; height:462px; margin:0 auto;}
+    .container .prdBox1 .prdInfo {width:50%; padding:40px; box-sizing: border-box;}
+    .prdBox1 .prdInfo h3 {padding:0; font-size: 30px;}
+    .prdBox1 .prdInfo p {padding:0 0 28px; font-size: 16px; line-height: 28px;}
+    .prdBox1 .prdInfo h4 {padding:30px 0 15px;}
+    .prdBox1 form .capacity {padding: 0 0 35px;}
+    .prdBox1 form .capacity input {height:55px; font-size: 16px;}
+    .prdBox1 form .ea_price {padding: 0 0 65px;}
+    .prdBox1 form .ea_price .ea select {height:55px; font-size: 16px;}
+    .prdBox1 form .ea_price .price p {font-size: 25px;}
+    .prdBox1 form .ea_price .price p span {font-size: 16px;}
+    .prdBox1 form .cart {width:100%; margin:0; padding:20px;}
+    .prdBox1 form .cart:hover {background-color: #de404f; color:#fff;}
+    /* box2 img & detail explain */
+    .prdBox2 {margin-top:150px; display: flex;}
+    .prdBox2 .left {width:50%; display: flex; flex-direction: column-reverse; align-items: center;}
+    .prdBox2 .left .img1 {width:85.6%; height:800px;}
+    .prdBox2 .left p, .prdBox2 .right p {font-size: 16px; padding:41px 12.5333% 35px; box-sizing: border-box;}
+    .prdBox2 .left p:nth-of-type(2) {padding:0 12.5333% 108px;}
+    .prdBox2 .right {width:50%;}
+    .prdBox2 .right .img2 {width:72.2666%; height: 810px; margin:0 auto;}
+    .prdBox2 .right p:nth-of-type(1) {padding:87px 17% 0;}
+    .prdBox2 .right p:nth-of-type(2) {padding:37px 17% 0;}
+
+    /* prdBox3 Menu */
+    .prdBox3 {margin:200px 0 290px;}
+    h2 {font-size:25px; font-weight: 500; margin-bottom: 35px;}
+    .prdBox3 > p br {display: none;}
+    .prdBox3 > ul > li {padding:26px 4.7008%; font-size: 16px;}
+    .prdBox3 > ul > li::before {font-size: 20px;}
+
+    /* prdBox4 Review */
+    .reversebox {display: flex; flex-direction: column-reverse;}
+    .prdBox4 .reviewList li a {height:290px; padding:75px 38px; box-sizing: border-box; display: flex;}
+    .prdBox4 .reviewList li a .thumb {display: block; padding-right:40px;}
+    .prdBox4 .reviewList li a .con {padding:20px;}
+    .prdBox4 .reviewList li a .con p {height:60px;}
+    .prdBox4 .btnbox {padding:74px 0 94px;justify-content: flex-end;}
+    .prdBox4 .btnbox input {width:195px; height:50px;}
+    .prdBox4 .btnbox input:nth-of-type(1) {margin-right:34px;}
+    .prdBox4 .page {display: none;}
+
+    /* footer */
+    footer {padding:120px 90px 0; font-size: 14px;}
+    footer ul {font-size: 14px;}
+    footer .box {margin-bottom: 30px;}
+    footer .box p {line-height: 30px;}
+
+    footer .botBox {display: flex; justify-content: space-between; padding:40px 0 90px; border-top: 1px solid #000;}
+    footer .copyright {font-size: 14px; margin:0;}
+    footer .sns {margin:0;}
+
+    .scrollTop {bottom:56px;}
 }
