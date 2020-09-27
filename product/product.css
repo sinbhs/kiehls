@@ -15,7 +15,7 @@ header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: cent
 header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;position: relative; z-index: 20;}
 header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
 header .hamburgerMenu .center::after {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; bottom:7px;}
-header h1 {text-indent: -9999px; background: url(images/kielLogo.png) no-repeat center/cover; width:125px; height:33px;}
+header h1 {text-indent: -9999px; background: url(../images/kielLogo.png) no-repeat center/cover; width:125px; height:33px;}
 header h1 a {height:100%;}
 header .gnb, header .sub_gnb {display: none;}
 
@@ -41,8 +41,8 @@ aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: abso
 }
 
 /* search box */
-.searchBox {width:100%; position:fixed; top:99px; z-index:17; background-color: #fff; opacity: 0; transition: 0.3s;}
-.searchBox.click {opacity: 1;}
+.searchBox {width:100%; position:fixed; top:99px; z-index:17; background-color: #fff; opacity: 0; visibility: hidden; transition: 0.3s;}
+.searchBox.click {opacity: 1; visibility: visible;}
 html.scrollDown .searchBox {top:59px;}
 fieldset {border:none; border-radius: 0; padding:0; width:80%; margin:0 auto; position: relative;}
 fieldset img {position:absolute; display: block;}
@@ -53,6 +53,24 @@ fieldset .close-icon {width:15px; top:32px; right:10px; cursor: pointer;}
 /* container */
 .container {color:#555555; padding-top:100px;}
 p {line-height: 21px;}
+
+/* 제품 메뉴 박스 */
+.container .product-menu-box {width: 100%;}
+.container .product-menu-box .titleArea {height: 56px; display: flex; align-items: center; padding:0 5.3333%; border-bottom: 1px solid #F1EDE9;}
+.container .product-menu-box .titleArea .return_history {width:29px; height:29px; border:1px solid #F1EDE9;}
+.container .product-menu-box .titleArea .return_history a img {display: block; padding:9px 11.5px;}
+.container .product-menu-box .titleArea h2 {padding-left:10px; font-size: 1.1em; color:#000; font-weight: normal;}
+
+.product-menu-box .product-sort-box {width:100%;}
+.product-menu-box .product-sort-box form {display: flex; justify-content: flex-end; padding: 22px 3.7333%;}
+.product-menu-box .product-sort-box form select {outline: none; border-color: #F1EDE9; padding:9px 40px 9px 10px; appearance: none; background:url(images/selectBtn.svg) no-repeat 85% 50%;}
+
+/* 메뉴 카테고리 스와이퍼 */
+.product-menu-box .menuCategory {width: 100%; height: 100%; border-bottom: 1px solid #F1EDE9;font-size: 1em;}
+.product-menu-box .swiper-wrapper {width:100%; height:50px;}
+.product-menu-box .swiper-wrapper .swiper-slide {width:33.33%; display: flex; align-items: center; justify-content: center;}
+.product-menu-box .swiper-wrapper .swiper-slide.focus {color:#000; font-weight: 500;}
+.product-menu-box .menuCategory .category-path {display: none;}
 
 
 /* footer */
@@ -109,7 +127,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
 
 
 
-    
+
     /* footer */
     footer {padding:0 90px; font-size: 14px;}
     footer ul {font-size: 14px;}

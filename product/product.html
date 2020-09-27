@@ -26,13 +26,16 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <!-- normalize css -->
-        <link rel="stylesheet" href="common/normalize.css">
+        <link rel="stylesheet" href="../common/normalize.css">
         <!-- font css -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="../common/swiper-bundle.min.css">
         <link rel="stylesheet" href="product.css">
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script> -->
+        <script src="../common/swiper-bundle.min.js"></script>
         <script src="js/product.js"></script>
     </head>
 
@@ -124,7 +127,159 @@
         </aside>
         <!-- 컨텐츠 컨테이너 -->
         <div class="container">
-
+            <!-- 제품 메뉴 박스 -->
+            <div class="product-menu-box">
+                <!-- 타이틀 -->
+                <div class="titleArea">
+                    <div class="return_history">
+                        <a href="#" onclick="history.go(-1);return false;">
+                            <img src="images/historyReturnBtn.svg" alt="뒤로가기 버튼">
+                        </a>
+                    </div>
+                    <h2>스킨 케어</h2>
+                </div>
+                <!-- 메뉴 카테고리 스와이퍼 -->
+                <div class="menuCategory swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">모든 스킨</a></li>
+                        <li class="swiper-slide"><a href="#">클렌저&스크럽</a></li>
+                        <li class="swiper-slide"><a href="#">토너</a></li>
+                        <li class="swiper-slide"><a href="#">마스크</a></li>
+                        <li class="swiper-slide"><a href="#">아이&립 케어</a></li>
+                        <li class="swiper-slide"><a href="#">모이스처라이저</a></li>
+                    </ul>
+                    <div class="category-path">
+                        <ol>
+                            <li><a href="../index.html">홈</a></li>
+                            <li><a href="product.html">스킨 케어</a></li>
+                            <li><a href="product.html">모든 스킨</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- sort 창 -->
+                <div class="product-sort-box">
+                    <form class="sort">
+                        <select name="selArray" id="sekkArrat">
+                            <option value="select" selected>-정렬 방식-</option>
+                            <option value="bestSeller">베스트 셀러</option>
+                            <option value="Review">평점순</option>
+                            <option value="lowPrice">낮은 가격순</option>
+                            <option value="highPrice">높은 가격순</option>
+                            <option value="newProduct">신제품</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <!-- 제품 리스트 박스 -->
+            <div class="prd-list-box">
+                <ul class="prdList">
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd1.jpg" alt="prd1">
+                            </div>
+                            <div class="description">
+                                <p><span>울트라 페이셜 크림</span><br>27,000 - 78,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd2.jpg" alt="prd2">
+                            </div>
+                            <div class="description">
+                                <p><span>미드나잇 리커버리<br>컨센트레이트 페이스 오일</span><br>69,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                         <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd3.jpg" alt="prd3">
+                            </div>
+                            <div class="description">
+                                <p><span>수퍼 멀티 코렉티브 크림</span><br>87,000 - 105,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd4.jpg" alt="prd4">
+                            </div>
+                            <div class="description">
+                                <p><span>카렌듈라 & 알로에<br>수딩 하이드레이션 마스크</span><br>69,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd5.jpg" alt="prd5">
+                            </div>
+                            <div class="description">
+                                <p><span>데일리 리바이빙 컨센트레이트</span><br>65,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd6.jpg" alt="prd6">
+                            </div>
+                            <div class="description">
+                                <p><span>칼렌듈라 허벌 엑스트렉트 토너</span><br>18,000 - 102,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd7.jpg" alt="prd7">
+                            </div>
+                            <div class="description">
+                                <p><span>칼렌듈라 딥 클렌징 포밍 페이스 워시</span><br>14,000 - 59,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd8.jpg" alt="prd8">
+                            </div>
+                            <div class="description">
+                                <p><span>칼렌듈라 세럼 인퓨즈드<br>워터 크림</span><br>38,000 - 95,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail/detail.html">
+                            <div class="thumbnail">
+                                <img src="images/prd9.jpg" alt="prd9">
+                            </div>
+                            <div class="description">
+                                <p><span>클리어리 코렉티브 다크 스팟 솔루션</span><br>86,000 - 168,000</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 더보기, 페이지 -->
+            <div class="page">
+                <ul>
+                    <li><a href="#"><img src="images/page_frist_btn.svg" alt="go_to_page_first"></a></li>
+                    <li><a href="#"><img src="images/prev_btn.svg" alt="prev_btn"></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><img src="images/next_btn.svg" alt="next_btn"></a></li>
+                    <li><a href="#"><img src="images/page_end_btn.svg" alt="go_to_page_end"></a></li>
+                </ul>
+            </div>
+            <div class="viewmoreBtn">
+                view more
+            </div>
         </div>
         <!-- footer -->
         <footer>

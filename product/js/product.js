@@ -72,5 +72,20 @@ $(function(){
         },600);
     });
 
-    
+    //Category 메뉴 swiper
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween:0,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+
+    //Category 선택 마다 제품 보이기
+    $('.swiper-slide').eq(0).addClass('focus');
+    $('.swiper-slide').on('click',function(){
+        $('.swiper-slide').removeClass('focus');
+        $(this).addClass('focus');
+    });
 });
