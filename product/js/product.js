@@ -81,13 +81,21 @@ $(function(){
           clickable: true,
         },
       });
+    
+    //pc버전 swiper 기능 off
+    var width = $(window).resize().width();
+    if(width >= 1440) {
+        $('.menuCategory').removeClass('swiper-container');
+        $('.menuCategory ul').removeClass('swiper-wrapper');
+        $('.menuCategory ul li').removeClass('swiper-slide');
+    }
 
     // Category 선택 마다 제품 보이기
     // category 변경
-    $('.swiper-slide').eq(0).addClass('focus');
+    $('.menuCategory ul li').eq(0).addClass('focus');
 
-    $('.swiper-slide').on('click',function(){
-        $('.swiper-slide').removeClass('focus');
+    $('.menuCategory ul li').on('click',function(){
+        $('.menuCategory ul li').removeClass('focus');
         $(this).addClass('focus');
     });
     // 카테고리에 따른 컨텐츠 변경
