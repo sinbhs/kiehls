@@ -125,16 +125,16 @@ $(function(){
             $('.title4').text('클리어리 코렉티브 다크 스팟 솔루션');
         }
         if(idx == 1) {
-            $('.img1').attr({"src":"images/bestB1.jpg"});
+            $('.img1').attr({"src":"images/bestb1.jpg"});
             $('.img2').attr({"src":"images/bestBody_h1.jpg"});
             $('.title1').text('끄렘 드 꼬르');
-            $('.img3').attr({"src":"images/bestB2.jpg"});
+            $('.img3').attr({"src":"images/bestb2.jpg"});
             $('.img4').attr({"src":"images/bestBody_h2.jpg"});
             $('.title2').text('크렘 드 꼬르 휘프트 바디 크림');
-            $('.img5').attr({"src":"images/bestB3.jpg"});
+            $('.img5').attr({"src":"images/bestb3.jpg"});
             $('.img6').attr({"src":"images/bestBody_h3.jpg"});
             $('.title3').text('인텐시브 트리트먼트 앤 모이스처라이저');
-            $('.img7').attr({"src":"images/bestB4.jpg"});
+            $('.img7').attr({"src":"images/bestb4.jpg"});
             $('.img8').attr({"src":"images/bestBody_h4.jpg"});
             $('.title4').text('배스 앤드 샤워 리퀴드 바디 클렌저');
         }
