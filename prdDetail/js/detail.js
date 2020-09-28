@@ -44,23 +44,22 @@ $(function(){
 
     //모바일 햄버거 메뉴 이벤트
     $('.hamburgerMenu').on('click',function(){
-        $(this).toggleClass('activeM');
-        $('html').toggleClass('activeM');
-        $('aside').animate({left:0});
-        const menu = $('.hamburgerMenu').hasClass('activeM');
-        if(menu) {
-            $('aside').animate({left:0},300);
+        $(this).toggleClass('activeM');//메뉴 모양 변경
+        $('html').toggleClass('activeM');//배경 마스크 온오프
+        $('aside').animate({left:0},500);//메뉴 등장
+        const menu = $('.hamburgerMenu').hasClass('activeM');//first메뉴 열린 상태
+        if(menu) {//first메뉴 열린 상태
             $('aside li').eq(0).on('click',function(){
-                $('aside .second').css({opacity:0});
-                $('aside .brand').animate({opacity:1});
+                $('aside .second').removeClass('overlay');
+                $('aside .brand').addClass('overlay')
             });
             $('aside li').eq(1).on('click',function(){
-                $('aside .second').css({opacity:0});
-                $('aside .prd').animate({opacity:1});
+                $('aside .second').removeClass('overlay');
+                $('aside .prd').addClass('overlay');
             });
         } else {
             $('aside').animate({left:'-100%'},200);
-            $('aside .second').animate({opacity:0});
+            $('aside .second').removeClass('overlay');
         }
         
     });
@@ -81,6 +80,20 @@ $(function(){
     $('.capacity input').on('click',function(){
         $('.capacity input').removeClass('choice');
         $(this).addClass('choice');
+        
+        const idx = $(this).index();
+        if (idx == 0) {
+            $('.price strong').text('27,000');
+            $('.price p span').text('28ml (1ea)');
+        }
+        if (idx == 1) {
+            $('.price strong').text('40,000');
+            $('.price p span').text('50ml (1ea)');
+        }
+        if (idx == 2) {
+            $('.price strong').text('78,000');
+            $('.price p span').text('125ml (1ea)');
+        }
     })
     
     //add cart 클릭 시 안내창

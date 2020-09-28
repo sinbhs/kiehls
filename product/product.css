@@ -15,7 +15,7 @@ header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: cent
 header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;position: relative; z-index: 20;}
 header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
 header .hamburgerMenu .center::after {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; bottom:7px;}
-header h1 {text-indent: -9999px; background: url(../images/kielLogo.png) no-repeat center/cover; width:125px; height:33px;}
+header h1 {text-indent: -9999px; background: url(../images/kielLogo.png) no-repeat center/cover; width:125px; height:33px; position: absolute; left:50%; transform: translateX(-50%);}
 header h1 a {height:100%;}
 header .gnb, header .sub_gnb {display: none;}
 
@@ -24,7 +24,8 @@ aside {display: flex; position: fixed; top:0; left:-100%; width: 100%; height:10
 aside .first {width:50%; height:100vh; background-color: #fff; position: absolute; top:0; left:0; z-index: 18; padding:110px 25px 0; box-sizing: border-box; display: flex; flex-direction: column; letter-spacing: -0.3px; font-weight: 300;}
 aside .first .category {font-size: 15px; line-height: 2.5;}
 aside .first .member {font-size:14px; line-height: 2; position: absolute; bottom:150px; left:25px;}
-aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: absolute; top:0; right:0; padding:110px 25px 0; box-sizing: border-box; font-size:15px; line-height: 2.5; letter-spacing: -0.3px; opacity: 0; visibility: 0; font-weight: 300;}
+aside .second {width:50%; height:100vh; background-color:#fbf9f5; position: absolute; top:0; right:0; padding:110px 25px 0; box-sizing: border-box; font-size:15px; line-height: 2.5; letter-spacing: -0.3px; opacity: 0; visibility: hidden; font-weight: 300; transition:.5s;}
+aside .second.overlay {visibility: visible; opacity: 1;}
 
 /* mobile hamburgerMenu active */
 .hamburgerMenu.activeM div{animation: Menu 300ms ease forwards;}
@@ -115,7 +116,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     /* header */
     header {height:160px; font-size: 15px; font-weight: 500;}
     header.scrollDown {height:80px; background-color: #fff; border-bottom: 1px solid #eee;}
-    header h1 {width:220px; height:58px; position: absolute; left:50%; transform: translateX(-50%);}
+    header h1 {width:220px; height:58px;}
     header .hamburgerMenu {display:none;}
 
     header .gnb, header .sub_gnb {display: flex;}
@@ -129,10 +130,11 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     header .right .sub_gnb li:last-child a {margin-right: 0;}
 
     /* header 호버시 나타나는 소메뉴 */
-    .sub {width:100%; background-color: #fff; display: flex; align-items: center; padding:10px 5.2777%; position:fixed; top:120px; left:0; z-index:999; font-size:15px;}
-    .sub li{padding:10px 0; font-weight: normal;}
-    .sub li:first-child {font-weight: bold;}
+    .sub {width:100%; background-color: #fff; display: flex; padding: 0 5.2777% 50px; box-sizing: border-box; position:fixed; top:110px; left:0; z-index:999; font-size:15px;}
+    .sub li{padding:8px 0; font-weight: normal; color:#555555;}
+    .sub li:first-child {font-weight: bold; margin-bottom:15px; cursor: default; color:#000;}
     html.scrollDown .sub {top:80px;}
+    html.scrollDown .sub li:first-child {padding-top:20px;}
 
     /* search box */
     .searchBox {top:160px;}

@@ -44,25 +44,23 @@ $(function(){
 
     //모바일 햄버거 메뉴 이벤트
     $('.hamburgerMenu').on('click',function(){
-        $(this).toggleClass('activeM');
-        $('html').toggleClass('activeM');
-        $('aside').animate({left:0});
-        const menu = $('.hamburgerMenu').hasClass('activeM');
-        if(menu) {
-            $('aside').animate({left:0},300);
+        $(this).toggleClass('activeM');//메뉴 모양 변경
+        $('html').toggleClass('activeM');//배경 마스크 온오프
+        $('aside').animate({left:0},500);//메뉴 등장
+        const menu = $('.hamburgerMenu').hasClass('activeM');//first메뉴 열린 상태
+        if(menu) {//first메뉴 열린 상태
             $('aside li').eq(0).on('click',function(){
-                $('aside .second').css({opacity:0});
-                $('aside .brand').animate({opacity:1});
+                $('aside .second').removeClass('overlay');
+                $('aside .brand').addClass('overlay')
             });
             $('aside li').eq(1).on('click',function(){
-                $('aside .second').css({opacity:0});
-                $('aside .prd').animate({opacity:1});
+                $('aside .second').removeClass('overlay');
+                $('aside .prd').addClass('overlay');
             });
         } else {
             $('aside').animate({left:'-100%'},200);
-            $('aside .second').animate({opacity:0});
+            $('aside .second').removeClass('overlay');
         }
-        
     });
 
     //scrollTop 버튼 클릭 시
@@ -114,7 +112,6 @@ $(function(){
     // 모든 스킨
     $('.menuCategory ul li').eq(0).on('click',function(){
         $('.prdList li').fadeIn('fast');
-        $('.prdList li:last-child').hide();
         $('.category-path ol li').eq(2).text('모든 스킨');
     });
     // 클렌저&스크럽
@@ -166,7 +163,7 @@ $(function(){
     });
 
     //view more 누르면 나타나는 9번째 제품
-    $('.menuCategory ul li').on('click',function(){
+    $('.viewmoreBtn').on('click',function(){
         $('.prdList li:last-child').show();
     });
 
