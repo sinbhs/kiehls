@@ -67,9 +67,21 @@ $(function(){
     //메인 배너 banner swiper
     var swiper = new Swiper('.swiper-container',{
         autoplay: {delay:3000},//자동 슬라이드
-        speed:2000,//스피드
-        pagination: {el: '.swiper-pagination', type: 'bullets', clickable :true}
+        pagination: {el: '.swiper-pagination', type: 'bullets', clickable :true},
+        //Reponsive breakpoints
+        breakpoints: {
+            //when window width is >= 1300
+            1300: {
+                speed:2000//슬라이드 넘기는 스피드
+            }
+        }
     })
+    //메인 배너 pagination 클릭시 해당 pagination부터 슬라이드 재시작
+    $('.swiper-pagination-bullet').on('click',function(){//pagination bullet 클릭 시 해당 슬라이드로 넘어감
+        let i = $(this).index();
+        swiper.slideToLoop(i);
+        swiper.autoplay.start();
+    });
     
 
     //베스트 셀러 scroll swiper

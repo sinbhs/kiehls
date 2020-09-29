@@ -77,16 +77,7 @@ $(function(){
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-        },
-        /*
-        // Responsive breakpoints
-        breakpoints: {
-            //when window width is >= 1440px
-            1440: {
-                slidesPerView: 6
-            }
         }
-        */
       });
     /*
     //pc버전 swiper 기능 off
@@ -111,41 +102,45 @@ $(function(){
     // 카테고리에 따른 컨텐츠 변경
     // 모든 스킨
     $('.menuCategory ul li').eq(0).on('click',function(){
-        $('.prdList li').fadeIn('fast');
+        $('.prdList li').show();
         $('.category-path ol li').eq(2).text('모든 스킨');
+        const width = $(window).width();
+        if(width <= 1400) {
+            $('.prdList li:last-child').hide();
+        }
     });
     // 클렌저&스크럽
     $('.menuCategory ul li').eq(1).on('click',function(){
-        $('.prdList li').fadeOut('fast');
-        $('.prdList .cleansing').fadeIn('fast');
+        $('.prdList li').hide();
+        $('.prdList .cleansing').show();
         $('.prdList li:last-child').hide();
         $('.category-path ol li').eq(2).text('클렌저&스크럽');
     });
     // 에센스
     $('.menuCategory ul li').eq(2).on('click',function(){
-        $('.prdList li').fadeOut('fast');
-        $('.prdList .essence').fadeIn('fast');
+        $('.prdList li').hide();
+        $('.prdList .essence').show();
         $('.prdList li:last-child').show();
         $('.category-path ol li').eq(2).text('에센스');
     });
     // 마스크
     $('.menuCategory ul li').eq(3).on('click',function(){
-        $('.prdList li').fadeOut('fast');
-        $('.prdList .skinMask').fadeIn('fast');
+        $('.prdList li').hide();
+        $('.prdList .skinMask').show();
         $('.prdList li:last-child').hide();
         $('.category-path ol li').eq(2).text('마스크');
     });
     // 토너
     $('.menuCategory ul li').eq(4).on('click',function(){
-        $('.prdList li').fadeOut('fast');
-        $('.prdList .toner').fadeIn('fast');
+        $('.prdList li').hide();
+        $('.prdList .toner').show();
         $('.prdList li:last-child').hide();
         $('.category-path ol li').eq(2).text('토너');
     });
     // 크림
     $('.menuCategory ul li').eq(5).on('click',function(){
-        $('.prdList li').fadeOut('fast');
-        $('.prdList .cream').fadeIn('fast');
+        $('.prdList li').hide();
+        $('.prdList .cream').show();
         $('.prdList li:last-child').hide();
         $('.category-path ol li').eq(2).text('크림');
     });

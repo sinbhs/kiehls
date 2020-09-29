@@ -5,7 +5,10 @@ p, h1, h2 {margin:0;}
 ul {list-style: none; margin:0; padding:0;}
 a {text-decoration: none; color:inherit; display:block;}
 img {vertical-align: top;}
-
+::selection {
+    background-color: #555;
+    color:#fff;
+}
 /* ---------- 모바일 ---------- */
 
 /* 헤더 */
@@ -15,7 +18,7 @@ header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: cent
 header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;position: relative; z-index: 20;}
 header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
 header .hamburgerMenu .center::after {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; bottom:7px;}
-header h1 {text-indent: -9999px; background: url(../images/kielLogo.png) no-repeat center/cover; width:125px; height:33px; position: absolute; left:50%; transform: translateX(-50%);}
+header h1 {text-indent: -9999px; background: url(../images/kielLogo.svg) no-repeat center/cover; width:125px; height:33px; position: absolute; left:50%; transform: translateX(-50%);}
 header h1 a {height:100%;}
 header .gnb, header .sub_gnb {display: none;}
 
@@ -165,11 +168,11 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .prd-list-box .prdList li a .thumbnail {margin-bottom:25px; position: relative;}
     .prd-list-box .prdList li a .thumbnail .prdHover {display: block; position: absolute; top:0; left:0; opacity: 0;}
     .prd-list-box .prdList li:hover a .thumbnail .prdHover {opacity: 1;}
-    .prd-list-box .prdList li a .thumbnail .searchIcon, .prd-list-box .prdList li a .thumbnail .shopB {display: block; width:37px; height:37px; border-radius: 50%; position: absolute; transition:0.3s; opacity: 0; visibility: 0; cursor: pointer;}
+    .prd-list-box .prdList li a .thumbnail .searchIcon, .prd-list-box .prdList li a .thumbnail .shopB {display: block; width:37px; height:37px; border-radius: 50%; position: absolute; transition:0.3s; opacity: 0; visibility: hidden; cursor: pointer;}
     .prd-list-box .prdList li a .thumbnail .searchIcon {top:50%; transform: translateY(-50%); left:38%; background: url(images/learnMoreIcon.svg) no-repeat center #fff;}
     .prd-list-box .prdList li a .thumbnail .shopB {top:50%; transform: translateY(-50%); right:38%; background: url(images/shoppingBagIcon.svg) no-repeat center #fff;}
 
-    .prd-list-box .prdList li.hover a .thumbnail .searchIcon,.prd-list-box .prdList li.hover a .thumbnail .shopB {opacity:1; visibility: 1;}
+    .prd-list-box .prdList li.hover a .thumbnail .searchIcon,.prd-list-box .prdList li.hover a .thumbnail .shopB {opacity:1; visibility: visible;}
 
     .prd-list-box .prdList li a .description {font-size: 16px;}
     .prd-list-box .prdList li a .description p br{display: none;}

@@ -5,7 +5,10 @@ p, h1, h2 {margin:0;}
 ul {list-style: none; margin:0; padding:0;}
 a {text-decoration: none; color:inherit; display:block;}
 img {vertical-align: top;}
-
+::selection {
+    background-color: #555;
+    color:#fff;
+}
 /* ---------- 모바일 ---------- */
 
 /* 헤더 */
@@ -15,7 +18,7 @@ header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: cent
 header .hamburgerMenu .center {width:23px; height:1px; background-color: #000;position: relative; z-index: 20;}
 header .hamburgerMenu .center::before {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; top:7px;}
 header .hamburgerMenu .center::after {content:''; display: block; width:23px; height:1px; background-color: #000; position: absolute; bottom:7px;}
-header h1 {text-indent: -9999px; background: url(images/kielLogo.png) no-repeat center/cover; width:125px; height:33px; position: absolute; left:50%; transform: translateX(-50%);}
+header h1 {text-indent: -9999px; background: url(images/kielLogo.svg) no-repeat center/cover; width:125px; height:33px; position: absolute; left:50%; transform: translateX(-50%);}
 header h1 a {height:100%;}
 header .gnb, header .sub_gnb {display: none;}
 
@@ -85,8 +88,9 @@ p {line-height: 21px;}
 
 /* 어바웃 */
 .aboutSection {height:160px; display: flex; flex-direction: column; align-items:center; text-align:center;}
-.aboutSection p {width:52.7777%; font-size:14px; text-transform: uppercase;}
-.aboutSection p:nth-of-type(1) {font-weight: 500; margin-top: 35px;}
+.aboutSection h3 {font-size:14px; font-weight: 500; margin-top: 35px; text-transform: uppercase;}
+.aboutSection p {width:52.7777%; font-size:14px;}
+.aboutSection p br {display: none;}
 .aboutSection span {display:none;}
 
 /* 베스트셀러 */
@@ -175,6 +179,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .sub {width:100%; background-color: #fff; display: flex; padding: 0 5.2777% 50px; box-sizing: border-box; position:fixed; top:110px; left:0; z-index:999; font-size:15px;}
     .sub li{padding:8px 0; font-weight: normal; color:#555555;}
     .sub li:first-child {font-weight: bold; margin-bottom:15px; cursor: default; color:#000;}
+    .sub_menu2 ul {padding-left:118.047px;}
     html.scrollDown .sub {top:80px;}
     html.scrollDown .sub li:first-child {padding-top:20px;}
 
@@ -209,8 +214,8 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
 
     /* about */
     .aboutSection {height:550px; justify-content: center;}
+    .aboutSection h3 {font-size: 18px; margin:0 0 55px;}
     .aboutSection p {font-size: 18px; line-height: 35px;}
-    .aboutSection p:nth-of-type(1) {margin:0 0 58px;}
     .aboutSection p > br{display: none;}
     .aboutSection span {display: block;}
 
@@ -249,9 +254,16 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
 
     /* footer */
     footer {padding:0 90px; font-size: 14px;}
+    footer .topBox {display: flex; justify-content: space-between;}/*추가된 푸터*/
     footer ul {font-size: 14px;}
     footer .box {margin-bottom: 30px;}
     footer .box p {line-height: 30px;}
+    
+    /* 추가된 푸터 */
+    footer .topBox .rightFooter {padding-right: 30vw;}
+    footer .topBox .rightFooter ul {display: block;}
+    footer .topBox .rightFooter ul li {padding:10px 0;}
+    footer .topBox .rightFooter h4 {margin:0 0 20px; font-weight: 500; cursor:default; color:#000;}
 
     footer .botBox {display: flex; justify-content: space-between; padding:40px 0 90px; border-top: 1px solid #000;}
     footer .copyright {font-size: 14px; margin:0;}
