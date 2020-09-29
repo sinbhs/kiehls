@@ -9,9 +9,9 @@ img {vertical-align: top;}
     background-color: #555;
     color:#fff;
 }
-/* ---------- 모바일 ---------- */
+/* ---------- mobile ---------- */
 
-/* 헤더 */
+/* header */
 header {width: 100%; height:100px; background-color: #fff; display: flex; align-items: center; justify-content: space-between; padding:0 5.2777%; box-sizing: border-box; position:fixed; top:0; left:0; z-index: 20; transition:.3s;}
 header.scrollDown {height:60px; border-bottom: 1px solid #eee;}
 header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: center; cursor: pointer;}
@@ -54,11 +54,11 @@ fieldset .search-icon {top:32px;}
 fieldset input {width:100%; padding:0 36px 5px; border:0; line-height: 32px; font-size:15px; color:#7c8389; background-color: #fff; margin:24px auto; border-bottom:1px solid #000; box-sizing: border-box; outline: none;}
 fieldset .close-icon {width:15px; top:32px; right:10px; cursor: pointer;}
 
-/* container */
+/* contents container */
 .container {color:#555555; padding-top:100px;}
 p {line-height: 21px;}
 
-/* 배너 */
+/* banner */
 .bannerSection {overflow: hidden;}
 .bannerSection .paddingBox {display: none;}
 .bannerSection .banner {display: flex; width:100%; height:375px;}
@@ -80,20 +80,19 @@ p {line-height: 21px;}
 .bannerSection .banner .txt .learnMore {background-color: rgba(255, 255, 255, 0.308); border:1px solid #de404f; border-radius: 40px; padding:15px 25px; font-weight: bold; color:#de404f; display: inline-block; transition:0.3s; cursor: pointer; font-size: 12px; text-transform: uppercase;}
 .bannerSection .banner .txt .learnMore:active {background-color: #de404f; color:#fff;}
 
-/* 배너 pagination */
+/* banner pagination */
 .bannerSection .swiper-container {width:100%;}
 .swiper-slide {width:100%; height:100%;}
 .bannerSection .pagination li {width:18px; height:2px; background-color: #fff; text-indent: -9999px;}
 .swiper-pagination-bullet {border-radius: 0%; width:18px; height:2px;}
 
-/* 어바웃 */
-.aboutSection {height:160px; display: flex; flex-direction: column; align-items:center; text-align:center;}
-.aboutSection h3 {font-size:14px; font-weight: 500; margin-top: 35px; text-transform: uppercase;}
+/* about */
+.aboutSection {height:160px; display: flex; flex-direction: column; justify-content: center; align-items:center; text-align:center;}
+.aboutSection h3 {font-size:14px; font-weight: 500; text-transform: uppercase;}
 .aboutSection p {width:52.7777%; font-size:14px;}
-.aboutSection p br {display: none;}
 .aboutSection span {display:none;}
 
-/* 베스트셀러 */
+/* best seller */
 h2 {text-transform: uppercase; color:#000;}
 .productSlide {height:480px; text-align: center; background-color: #efecea; padding:30px 10% 70px; box-sizing: border-box;}
 .productSlide h2 {padding:0 0 25px; font-size: 15px;}
@@ -104,7 +103,7 @@ h2 {text-transform: uppercase; color:#000;}
 
 .productSlide .prd_tab li p {display: none;}
 
-/* 베스트셀러 스크롤 스와이퍼 */
+/* best seller scroll-swiper */
 .scroll_container {width:100%; height:315px; padding-top:30px; overflow: hidden; position: relative;}
 .scroll_container .swiper-wrapper {display:flex;}
 .scroll_container .swiper-wrapper .swiper-slide .swiper_txt a {padding-top:15px; font-size: 13px;}
@@ -113,12 +112,12 @@ h2 {text-transform: uppercase; color:#000;}
 .swiper-container-horizontal>.swiper-scrollbar {height:2px; z-index: 16;}
 .swiper-scrollbar-drag {background-color: #967c69;}
 
-/* 베스트셀러 이미지 호버 */
+/* best seller:hover */
 .swiper_img > a {position: relative;width:285px; height: 245px; margin:0 auto;}
 .swiper_img > a img {position: absolute; top:0; left:0;}
 .swiper_img > a img:nth-of-type(2) {opacity: 0; transition: .3s;}
 
-/* 베스트 리뷰 */
+/* best review */
 .bestReview {margin:0 auto; margin-top:65px; width: 90%;}
 .bestReview h2 {text-align: center; font-size: 15px; margin-bottom:35px;}
 .bestReview ul li {border:1px solid #d8c9bf; margin-bottom:12px; padding:18px; box-sizing: border-box;}
@@ -136,12 +135,14 @@ h2 {text-transform: uppercase; color:#000;}
 
 /* video */
 .video {margin-bottom:65px;}
+.video iframe {border:0; height:56vw;}
 
 /* footer */
 footer {padding: 0 35px; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
 footer ul {display: flex; font-size: 14px; margin-bottom:35px; font-weight: 500;}
 footer ul li {padding-right:20px;}
 footer ul li:hover {color:#de404f;}
+footer .rightFooter {color:#000;}
 footer .box {margin-bottom: 18px;}
 footer .box p {line-height:1.8; letter-spacing: -0.3px;}
 footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capitalize;}
@@ -149,7 +150,7 @@ footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capital
 .sns {display: flex; margin-bottom:47px; align-items: center;}
 .sns div {margin-right:18px;}
 
-/* 스크롤 탑 */
+/* scrollTop */
 .scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
 
 /* hamburgerMenu mask */
@@ -175,7 +176,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     header .right .sub_gnb li:hover {color:#de404f;}
     header .right .sub_gnb li:last-child a {margin-right: 0;}
 
-    /* header 호버시 나타나는 소메뉴 */
+    /* header:hover subMenu */
     .sub {width:100%; background-color: #fff; display: flex; padding: 0 5.2777% 50px; box-sizing: border-box; position:fixed; top:110px; left:0; z-index:999; font-size:15px;}
     .sub li{padding:8px 0; font-weight: normal; color:#555555;}
     .sub li:first-child {font-weight: bold; margin-bottom:15px; cursor: default; color:#000;}
@@ -216,7 +217,6 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .aboutSection {height:550px; justify-content: center;}
     .aboutSection h3 {font-size: 18px; margin:0 0 55px;}
     .aboutSection p {font-size: 18px; line-height: 35px;}
-    .aboutSection p > br{display: none;}
     .aboutSection span {display: block;}
 
     /* best seller */
@@ -231,7 +231,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .scroll_container {width: 74%; height:330px;}
     .swiper-slide {width:20%;}
 
-    /* 베스트셀러 이미지 호버 */
+    /* best seller:hover */
     .swiper_img > a img:nth-of-type(2) {opacity: 0; transition: .3s;}
     .swiper-slide:hover .swiper_img a img:nth-of-type(2) {opacity: 1;}
 
@@ -254,12 +254,12 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
 
     /* footer */
     footer {padding:0 90px; font-size: 14px;}
-    footer .topBox {display: flex; justify-content: space-between;}/*추가된 푸터*/
+    footer .topBox {display: flex; justify-content: space-between;}
     footer ul {font-size: 14px;}
+    /* footer leftbox */
     footer .box {margin-bottom: 30px;}
     footer .box p {line-height: 30px;}
-    
-    /* 추가된 푸터 */
+    /* footer right box */
     footer .topBox .rightFooter {padding-right: 30vw;}
     footer .topBox .rightFooter ul {display: block;}
     footer .topBox .rightFooter ul li {padding:10px 0;}
@@ -268,6 +268,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     footer .botBox {display: flex; justify-content: space-between; padding:40px 0 90px; border-top: 1px solid #000;}
     footer .copyright {font-size: 14px; margin:0;}
     footer .sns {margin:0;}
-
+    
+    /* scrollTop */
     .scrollTop {bottom:56px;}
 }

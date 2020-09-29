@@ -41,11 +41,11 @@
 
     <body>
         <header>
-            <!-- 모바일 햄버거 메뉴 -->
+            <!-- mobile hamburger menu -->
             <div class="hamburgerMenu">
                 <div class="center"></div>
             </div>
-            <!-- 메인 네비게이션 바 -->
+            <!-- main navigation bar -->
             <ul class="gnb">
                 <li>
                     <a href="#">브랜드 소개</a>
@@ -72,9 +72,9 @@
                 </li>
                 <li><a href="#">이벤트</a></li>
             </ul>
-            <!-- 로고 -->
+            <!-- logo -->
             <h1><a href="../index.html">kiehl's Logo</a></h1>
-            <!-- 검색, 멤버, 장바구니 내비게이션 -->
+            <!-- search, sign, cart navigation -->
             <div class="right">
                 <a href="#"><img src="../images/searchIcon.svg" alt="search"></a>
                 <ul class="sub_gnb">
@@ -84,7 +84,7 @@
                 </ul>
             </div>
         </header>
-        <!-- 검색창 -->
+        <!-- search -->
         <div class="searchBox">
             <form id="searchBarform">
                 <fieldset>
@@ -94,7 +94,7 @@
                 </fieldset>
             </form>
         </div>
-        <!-- 햄버거 메뉴 overlay -->
+        <!-- hamburger menu overlay -->
         <aside>
             <div class="first">
                 <ul class="category">
@@ -127,16 +127,16 @@
         </aside>
         <!-- contents container-->
         <div class="container">
-            <!-- 제품 메뉴 박스 -->
+            <!-- product menu box -->
             <div class="product-menu-box">
-                <!-- 카테고리 타이틀 -->
+                <!-- category title menu -->
                 <div class="titleArea">
                     <div class="return_history">
                         <a href="#" onclick="history.go(-1); return false;"><img src="images/historyReturnBtn.svg" alt="뒤로가기 버튼"></a>
                     </div>
                     <h2>상품 상세정보</h2>
                 </div>
-                <!-- 경로 -->
+                <!-- category path -->
                 <div class="category-path">
                     <ol>
                         <li><a href="../index.html">홈</a></li>
@@ -146,7 +146,7 @@
                     </ol>
                 </div>
             </div>
-            <!-- 제품 박스1 -->
+            <!-- prdBox1 : swiper -->
             <div class="prdBox1">
                 <div class="prdSlide">
                     <div class="prdImg swiper-container">
@@ -160,6 +160,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
+                <!-- prdBox1 : prdInfo -->
                 <div class="prdInfo">
                     <div class="infoTop">
                         <h3>울트라 페이셜 크림</h3>
@@ -189,7 +190,7 @@
                     </form>
                 </div>
             </div>
-            <!-- 제품 박스2 -->
+            <!-- prdBox2 : detail -->
             <div class="prdBox2">
                 <div class="left">
                     <div class="img1">img1</div>
@@ -305,17 +306,30 @@
         </div>
         <!-- footer -->
         <footer>
-            <ul>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">글로벌 사이트</a></li>
-            </ul>
-            <div class="box">
-                <p>사업자명: 엘오케이(유) | 대표: 크리스티앙 마르코스 아르나이<br>사업자 등록번호: 220-81-73483<br>통신판매업신고: 2012-서울강남-01663<br>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층<br>개인정보관리책임자: 안선지<br>고객 케어 센터: 080-822-3322<br>제품 문의: 080-022-3332</p>
+            <!-- information -->
+            <div class="topBox">
+                <div class="leftFooter">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">글로벌 사이트</a></li>
+                    </ul>
+                    <div class="box">
+                        <p>사업자명: 엘오케이(유) | 대표: 크리스티앙 마르코스 아르나이<br>사업자 등록번호: 220-81-73483<br>통신판매업신고: 2012-서울강남-01663<br>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층<br>개인정보관리책임자: 안선지<br>고객 케어 센터: 080-822-3322<br>제품 문의: 080-022-3332</p>
+                    </div>
+                </div>
+                <div class="rightFooter">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="https://sinbhs.github.io/portfolio" target="_blank">포트폴리오</a></li>
+                        <li><a href="https://github.com/sinbhs" target="_blank">깃허브</a></li>
+                    </ul>
+                </div>
             </div>
+            <!-- copyright / sns -->
             <div class="botBox">
                 <div class="copyright">
-                    <p>&copy; 2020 design & developed by jiwooSong</p>
+                    <p>&copy; 2020 designed & developed by jiwooSong</p>
                 </div>
                 <div class="sns">
                     <div class="insta">
@@ -330,7 +344,9 @@
                 </div>
             </div>
         </footer>
+    <!-- mobile:active mask -->
     <div class="mask"></div>
+    <!-- scrollTop -->
     <a class="scrollTop"></a>
     </body>
 </html>

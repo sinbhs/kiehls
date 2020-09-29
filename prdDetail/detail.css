@@ -11,7 +11,7 @@ img {vertical-align: top;}
 }
 /* ---------- 모바일 ---------- */
 
-/* 헤더 */
+/* header */
 header {width: 100%; height:100px; background-color: #fff; display: flex; align-items: center; justify-content: space-between; padding:0 5.2777%; box-sizing: border-box; position:fixed; top:0; left:0; z-index: 20; transition:.3s;}
 header.scrollDown {height:60px; border-bottom: 1px solid #eee;}
 header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: center; cursor: pointer;}
@@ -58,14 +58,14 @@ fieldset .close-icon {width:15px; top:32px; right:10px; cursor: pointer;}
 .container {color:#555555; padding-top:100px;}
 p {line-height: 21px;}
 
-/* 제품 타이틀 메뉴 */
+/* product title menu */
 .container .titleArea {height: 56px; display: flex; align-items: center; padding:0 5.3333%; border-bottom: 1px solid #F1EDE9;}
 .container .titleArea .return_history {width:29px; height:29px; border:1px solid #F1EDE9;}
 .container .titleArea .return_history a img {display: block; padding:9px 11.5px;}
 .container .titleArea h2 {padding-left:10px; font-size: 1em; color:#000; font-weight: normal; margin-bottom:0;}
 
 
-/* 제품 메뉴 박스 */
+/* product menu box */
 .container .product-menu-box .category-path {display: none;}
 
 /* prdBox1 */
@@ -143,7 +143,7 @@ footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capital
 .sns {display: flex; margin-bottom:47px; align-items: center;}
 .sns div {margin-right:18px;}
 
-/* 스크롤 탑 */
+/* scrollTop */
 .scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(../images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
 
 /* hamburgerMenu mask */
@@ -168,7 +168,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     header .right .sub_gnb li:hover {color:#de404f;}
     header .right .sub_gnb li:last-child a {margin-right: 0;}
 
-    /* header 호버시 나타나는 소메뉴 */
+    /* header:hover submenu */
     .sub {width:100%; background-color: #fff; display: flex; padding: 0 5.2777% 50px; box-sizing: border-box; position:fixed; top:110px; left:0; z-index:999; font-size:15px;}
     .sub li{padding:8px 0; font-weight: normal; color:#555555;}
     .sub li:first-child {font-weight: bold; margin-bottom:15px; cursor: default; color:#000;}
@@ -180,7 +180,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     html.scrollDown .searchBox {top:80px;}
     fieldset {width:50%;}
 
-    /* 제품 메뉴박스 */
+    /* product menu box */
     .container .product-menu-box .titleArea {padding:0; margin-top:43px; border:0;}
     .container .product-menu-box .titleArea .return_history {display: none;}
     .container .product-menu-box .titleArea h2 {text-indent: -9999px;}
@@ -242,12 +242,17 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     /* footer */
     footer {padding:120px 90px 0; font-size: 14px;}
     footer ul {font-size: 14px;}
+    footer .topBox {display: flex; justify-content: space-between;}
     footer .box {margin-bottom: 30px;}
     footer .box p {line-height: 30px;}
-
+    footer .topBox .rightFooter {padding-right: 30vw;}
+    footer .topBox .rightFooter ul {display: block;}
+    footer .topBox .rightFooter ul li {padding:10px 0;}
+    footer .topBox .rightFooter h4 {margin:0 0 20px; font-weight: 500; cursor:default; color:#000;}
     footer .botBox {display: flex; justify-content: space-between; padding:40px 0 90px; border-top: 1px solid #000;}
     footer .copyright {font-size: 14px; margin:0;}
     footer .sns {margin:0;}
-
+    
+    /* scrollTop */
     .scrollTop {bottom:56px;}
 }

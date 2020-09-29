@@ -9,9 +9,9 @@ img {vertical-align: top;}
     background-color: #555;
     color:#fff;
 }
-/* ---------- 모바일 ---------- */
+/* ---------- mobile ---------- */
 
-/* 헤더 */
+/* header */
 header {width: 100%; height:100px; background-color: #fff; display: flex; align-items: center; justify-content: space-between; padding:0 5.2777%; box-sizing: border-box; position:fixed; top:0; left:0; z-index: 20; transition:.3s;}
 header.scrollDown {height:60px; border-bottom: 1px solid #eee;}
 header .hamburgerMenu {width:23px; height:23px; display: flex; align-items: center; cursor: pointer;}
@@ -58,7 +58,7 @@ fieldset .close-icon {width:15px; top:32px; right:10px; cursor: pointer;}
 .container {color:#555555; padding-top:100px;}
 p {line-height: 21px;}
 
-/* 제품 메뉴 박스 */
+/* product menu box */
 .container .product-menu-box {width: 100%;}
 .container .product-menu-box .titleArea {height: 56px; display: flex; align-items: center; padding:0 5.3333%; border-bottom: 1px solid #F1EDE9;}
 .container .product-menu-box .titleArea .return_history {width:29px; height:29px; border:1px solid #F1EDE9;}
@@ -69,14 +69,14 @@ p {line-height: 21px;}
 .product-menu-box .product-sort-box form {display: flex; justify-content: flex-end; padding: 22px 3.7333%;}
 .product-menu-box .product-sort-box form select {font-size:0.875em; outline: none; border-color: #F1EDE9; padding:9px 40px 9px 10px; appearance: none; background:url(images/selectBtn.svg) no-repeat 85% 50%;}
 
-/* 메뉴 카테고리 스와이퍼 */
+/* category menu swiper */
 .product-menu-box .menuCategory {width: 100%; height: 100%; border-bottom: 1px solid #F1EDE9;font-size: 0.875em;}
 .product-menu-box .swiper-wrapper {width:100%; height:50px;}
 .product-menu-box .swiper-wrapper .swiper-slide {width:33.33%; display: flex; align-items: center; justify-content: center;}
 .product-menu-box .swiper-wrapper li.focus {color:#000; font-weight: 500;}
 .product-menu-box .menuCategory .category-path {display: none;}
 
-/* 제품 리스트 박스 */
+/* product list box */
 .prd-list-box {width: 100%; padding:0 1%; box-sizing: border-box;}
 .prd-list-box .prdList {display: flex; flex-wrap: wrap;}
 .prd-list-box .prdList li {width:48%; padding:0 1%; margin-bottom: 25px;}
@@ -88,7 +88,7 @@ p {line-height: 21px;}
 .prd-list-box .prdList li a .description {text-align: center; font-size:0.9em; color:#000;}
 .prd-list-box .prdList li a .description span {display:block; height: 44px; font-weight: 400; padding-bottom:5px;}
 
-/* 페이지, 더보기 */
+/* viewmore, page */
 .container .page {border-bottom: 1px solid #000;}
 .container .page ul {display: none;}
 .container .page .viewmoreBtn {font-size: 0.813em; color:#de404f; text-transform: uppercase; font-weight: 500; border:1px solid #de404f; border-radius:40px; padding:15px 25px; margin:40px auto 50px; text-align: center; width:100px;}
@@ -106,7 +106,7 @@ footer .copyright {margin-bottom: 18px; font-size: 12px; text-transform: capital
 .sns {display: flex; margin-bottom:47px; align-items: center;}
 .sns div {margin-right:18px;}
 
-/* 스크롤 탑 */
+/* scrollTop */
 .scrollTop {border:1px solid #eee; width:44px; height:44px; background: url(../images/scrollTopArrow.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:68px; opacity: 0.7; cursor: pointer;}
 
 /* hamburgerMenu mask */
@@ -132,7 +132,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     header .right .sub_gnb li:hover {color:#de404f;}
     header .right .sub_gnb li:last-child a {margin-right: 0;}
 
-    /* header 호버시 나타나는 소메뉴 */
+    /* header:hover submenu */
     .sub {width:100%; background-color: #fff; display: flex; padding: 0 5.2777% 50px; box-sizing: border-box; position:fixed; top:110px; left:0; z-index:999; font-size:15px;}
     .sub li{padding:8px 0; font-weight: normal; color:#555555;}
     .sub li:first-child {font-weight: bold; margin-bottom:15px; cursor: default; color:#000;}
@@ -146,7 +146,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     
     .container {padding:160px 10.9375% 0;}
 
-    /* 제품 메뉴박스 */
+    /* product menu box */
     .container .product-menu-box .titleArea {padding:0; margin-top:43px; border:0;}
     .container .product-menu-box .titleArea .return_history {display: none;}
     .container .product-menu-box .titleArea h2 {padding:0; font-size: 25px;}
@@ -161,7 +161,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .product-menu-box .product-sort-box form {padding:25px 0;}
     .product-menu-box .product-sort-box form select {border-color: #D8C9BF;}
 
-    /* 제품 리스트 박스 */
+    /* product list box */
     .prd-list-box {padding:0;}
     .prd-list-box .prdList li {width: 33.3333%; height:640px; padding:20px; box-sizing: border-box;}
     .prd-list-box .prdList li:last-child {display: block;}
@@ -178,7 +178,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .prd-list-box .prdList li a .description p br{display: none;}
     .prd-list-box .prdList li a .description span {height:100%;padding-bottom: 20px;}
 
-    /* 페이지 */
+    /* viewmore, page */
     .container .page {padding:40px 0 80px; border:0;}
     .container .page .viewmoreBtn {display: none;}
     .container .page ul {display: flex; justify-content: center;}
@@ -191,12 +191,17 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     /* footer */
     footer {padding:0 90px; font-size: 14px;}
     footer ul {font-size: 14px;}
+    footer .topBox {display: flex; justify-content: space-between;}
     footer .box {margin-bottom: 30px;}
     footer .box p {line-height: 30px;}
-
+    footer .topBox .rightFooter {padding-right: 30vw;}
+    footer .topBox .rightFooter ul {display: block;}
+    footer .topBox .rightFooter ul li {padding:10px 0;}
+    footer .topBox .rightFooter h4 {margin:0 0 20px; font-weight: 500; cursor:default; color:#000;}
     footer .botBox {display: flex; justify-content: space-between; padding:40px 0 90px; border-top: 1px solid #000;}
     footer .copyright {font-size: 14px; margin:0;}
     footer .sns {margin:0;}
-
+    
+    /* scrollTop */
     .scrollTop {bottom:56px;}
 }
