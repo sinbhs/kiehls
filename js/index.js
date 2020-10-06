@@ -33,7 +33,7 @@ $(function(){
     });
 
     //검색 버튼
-    $('header .right a img').on('click',function(){
+    $('header .right a .search').on('click',function(){
         $('.searchBox').toggleClass('click');//서치박스 opacity 제어
         $('html').toggleClass('activeM');//마스크
         $('.searchBox .close-icon').on('click',function(){
