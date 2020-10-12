@@ -197,7 +197,8 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     footer .topBox .rightFooter {padding-right: 30vw;}
     footer .topBox .rightFooter ul {display: block;}
     footer .topBox .rightFooter ul li {padding:10px 0;}
-    footer .topBox .rightFooter h4 {margin:0 0 20px; font-weight: 500; cursor:default; color:#000;}
+    footer .topBox .rightFooter h4 {margin:0 0 20px; font-weight: 500; cursor:default; color:#000; position: relative;}
+    footer .topBox .rightFooter h4::after {content: ''; display: block; width:90%; height: 0.8em; background-color: #ccc0b7a4; position: absolute; bottom:-0.2em; left:0; z-index: -3;}
     footer .botBox {display: flex; justify-content: space-between; padding:40px 0 90px; border-top: 1px solid #000;}
     footer .copyright {font-size: 14px; margin:0;}
     footer .sns {margin:0;}
