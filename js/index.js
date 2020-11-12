@@ -68,6 +68,7 @@ $(function(){
     var swiper = new Swiper('.swiper-container',{
         autoplay: {delay:3000},//자동 슬라이드
         pagination: {el: '.swiper-pagination', type: 'bullets', clickable :true},
+        loop: true,
         //Reponsive breakpoints
         breakpoints: {
             //when window width is >= 1300

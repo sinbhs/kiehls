@@ -63,10 +63,10 @@ p {line-height: 21px;}
 .bannerSection .paddingBox {display: none;}
 .bannerSection .banner {display: flex; width:100%; height:375px;}
 .bannerSection .banner li {width:100vw; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; justify-content: center; align-items: center;}
-.bannerSection .banner li:first-child {background-image:url(images/mainBannerBg1.png); background-position: 85% center;}
-.bannerSection .banner li:nth-child(2) {background-image:url(images/mainBannerBg2.png); background-position: 82% center;}
-.bannerSection .banner li:nth-child(3) {background-image:url(images/mainBannerBg3.png); background-position: 0 center;}
-.bannerSection .banner li:nth-child(4) {background-image:url(images/mainBannerBg4.png); background-position: 95% 0;}
+.bannerSection .banner .banner1 {background-image:url(images/mainBannerBg1.png); background-position: 85% center;}
+.bannerSection .banner .banner2 {background-image:url(images/mainBannerBg2.png); background-position: 82% center;}
+.bannerSection .banner .banner3 {background-image:url(images/mainBannerBg3.png); background-position: 0 center;}
+.bannerSection .banner .banner4 {background-image:url(images/mainBannerBg4.png); background-position: 95% 0;}
 .bannerSection .banner .txt {width:100%; padding:0 5.2777%;}
 .bannerSection .banner .txt p {font-size: 14px;}
 .bannerSection .banner .txt .bn_category {color:#de404f; font-weight: 600; text-transform: uppercase;}
@@ -74,8 +74,8 @@ p {line-height: 21px;}
 .bannerSection .banner .txt .bn_explain {display: none;}
 .bannerSection .banner .txt .kr_ex {padding-bottom:40px; color:#2d2d2d; letter-spacing: -0.3px;}
 
-.bannerSection .banner li:nth-child(3){background-size: 1400px; background-position: 40% 50%;}
-.bannerSection .banner li:nth-child(3) .txt {padding-left:38%;}
+.bannerSection .banner .banner3 {background-size: 1400px; background-position: 40% 50%;}
+.bannerSection .banner .banner3 .txt {padding-left:38%;}
 
 .bannerSection .banner .txt .learnMore {background-color: rgba(255, 255, 255, 0.308); border:1px solid #de404f; border-radius: 40px; padding:15px 25px; font-weight: bold; color:#de404f; display: inline-block; transition:0.3s; cursor: pointer; font-size: 12px; text-transform: uppercase;}
 .bannerSection .banner .txt .learnMore:active {background-color: #de404f; color:#fff;}
@@ -83,8 +83,8 @@ p {line-height: 21px;}
 /* banner pagination */
 .bannerSection .swiper-container {width:100%;}
 .swiper-slide {width:100%; height:100%;}
-.bannerSection .pagination li {width:18px; height:2px; background-color: #fff; text-indent: -9999px;}
-.swiper-pagination-bullet {border-radius: 0%; width:18px; height:2px;}
+.bannerSection .pagination li {width:18px; height:4px; background-color: #fff; text-indent: -9999px;}
+.swiper-pagination-bullet {border-radius: 0%; width:18px; height:4px;}
 
 /* about */
 .aboutSection {height:160px; display: flex; flex-direction: column; justify-content: center; align-items:center; text-align:center;}
@@ -106,7 +106,7 @@ h2 {text-transform: uppercase; color:#000;}
 /* best seller scroll-swiper */
 .scroll_container {width:100%; height:315px; padding-top:30px; overflow: hidden; position: relative;}
 .scroll_container .swiper-wrapper {display:flex;}
-.scroll_container .swiper-wrapper .swiper-slide .swiper_txt a {padding-top:15px; font-size: 13px;}
+.scroll_container .swiper-wrapper .swiper-slide .swiper_txt a {padding-top:15px; font-size: 13px; color:#222222;}
 
 .swiper-scrollbar {background-color: #d8c9bf;}
 .swiper-container-horizontal>.swiper-scrollbar {height:2px; z-index: 16;}
@@ -194,19 +194,19 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .container .bannerSection {width: 89.4446%;}
     .bannerSection .paddingBox {display: block; width:5.2777%;}
     .bannerSection .banner {height:717px;}
-    .bannerSection .banner li:first-child {background-position: center;}
-    .bannerSection .banner li:nth-child(2) {background-position:center;}
-    .bannerSection .banner li:nth-child(3) {background-size: cover; background-position: center;}
-    .bannerSection .banner li:nth-child(3) .txt {text-align:left;}
-    .bannerSection .banner li:last-child {background-position: center;}
+    .bannerSection .banner .banner1 {background-position: center;}
+    .bannerSection .banner .banner2 {background-position:center;}
+    .bannerSection .banner .banner3 {background-size: cover; background-position: center;}
+    .bannerSection .banner .banner3 .txt {text-align:left;}
+    .bannerSection .banner .banner4 {background-position: center;}
 
     .bannerSection .banner .txt {padding:0 203px;}
     .bannerSection .banner .txt p {font-size: 16px; padding-left:0.4%;}
     .bannerSection .banner .txt h2 {font-size: 2.5rem; padding-bottom: 10px;}
     .bannerSection .banner .txt .bn_explain {display: block; color:#000; font-weight: 600; text-transform: capitalize; margin-bottom:44px;}
     .bannerSection .banner .txt .kr_ex {margin-bottom: 55px;}
-    .bannerSection .banner li:nth-child(3) {justify-content: flex-end;}
-    .bannerSection .banner li:nth-child(3) .txt {width: 26.7879%; padding-right:15%; padding-left:0;}
+    .bannerSection .banner .banner3 {justify-content: flex-end;}
+    .bannerSection .banner .banner3 .txt {width: 26.7879%; padding-right:15%; padding-left:0;}
 
     .bannerSection .banner .txt .learnMore {font-size:15px; background-color: transparent;}
     .bannerSection .banner .txt .learnMore:hover {background-color: #de404f; color: #fff;}

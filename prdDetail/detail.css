@@ -72,10 +72,12 @@ p {line-height: 21px;}
 /* prdBox1 slider */
 .container .prdBox1 .prdImg {width:100%; height:375px; margin:0 0 45px;}
 .container .prdBox1 .prdImg .swiper-container {width:100%; height:100%;}
-.container .prdBox1 .prdImg ul li:first-child {background: url(images/prdDetail1.jpg) no-repeat center/cover;}
-.container .prdBox1 .prdImg ul li:nth-child(2) {background: url(images/prdDetail2.jpg) no-repeat center/cover;}
-.container .prdBox1 .prdImg ul li:nth-child(3) {background: url(images/prdDetail3.jpg) no-repeat center/cover;}
-.container .prdBox1 .prdImg ul li:last-child {background: url(images/prdDetail4.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul .banner1 {background: url(images/prdDetail1.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul .banner2 {background: url(images/prdDetail2.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul .banner3 {background: url(images/prdDetail3.jpg) no-repeat center/cover;}
+.container .prdBox1 .prdImg ul .banner4 {background: url(images/prdDetail4.jpg) no-repeat center/cover;}
+/* swiper pagination bullet */
+.swiper-pagination-bullet {border-radius: 0; width:25px; height:5px;}
 /* prdBox1 info */
 .prdBox1 .prdInfo .infoTop {border-bottom:1px solid #000;}
 .prdBox1 .prdInfo h3 {font-size: 25px; font-weight: normal; color:#000; padding:0 8%;}

@@ -66,13 +66,19 @@ $(function(){
 
     //prd swiper
     var swiper = new Swiper('.swiper-container', {
-        autoplay: {delay:3000},
-        speed:2000,
-        slidesPerView: 1,
+        autoplay: {delay:2500},
+        loop: true,
+        speed:1000,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
           hide: false
+        },
+        breakpoints: {
+            //when window width is >= 1300
+            1300: {
+                speed:2000//슬라이드 넘기는 스피드
+            }
         }
       });
 
