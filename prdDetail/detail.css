@@ -174,6 +174,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .sub {width:100%; background-color: #fff; display: flex; padding: 0 5.2777% 50px; box-sizing: border-box; position:fixed; top:110px; left:0; z-index:999; font-size:15px;}
     .sub li{padding:8px 0; font-weight: normal; color:#555555;}
     .sub li:first-child {font-weight: bold; margin-bottom:15px; cursor: default; color:#000;}
+    .sub_menu2 ul {padding-left: 118.047px;}
     html.scrollDown .sub {top:80px;}
     html.scrollDown .sub li:first-child {padding-top:20px;}
 
