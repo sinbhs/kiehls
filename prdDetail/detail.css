@@ -5,10 +5,10 @@ p, h1, h2 {margin:0;}
 ul {list-style: none; margin:0; padding:0;}
 a {text-decoration: none; color:inherit; display:block;}
 img {vertical-align: top;}
-::selection {
-    background-color: #555;
-    color:#fff;
-}
+::selection {background-color: #555; color:#fff;}
+::-moz-selection {background-color: #555; color:#fff;}
+::-webkit-selection {background-color: #555; color:#fff;}
+
 /* ---------- 모바일 ---------- */
 
 /* header */
