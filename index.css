@@ -72,7 +72,9 @@ p {line-height: 21px;}
 .bannerSection .banner .txt .bn_category {color:#de404f; font-weight: 600; text-transform: uppercase;}
 .bannerSection .banner .txt h2 {font-size:25px; font-weight:600; text-transform: capitalize; padding-bottom:15px;}
 .bannerSection .banner .txt .bn_explain {display: none;}
-.bannerSection .banner .txt .kr_ex {padding-bottom:40px; color:#2d2d2d; letter-spacing: -0.3px;}
+.bannerSection .banner .txt .kr_ex {padding-bottom:40px; color:#2d2d2d; letter-spacing: -0.3px;;}
+.bannerSection .banner .swiper-slide .kr_ex { opacity: 0; -webkit-transform: translateX(30px); -ms-transform: translateX(30px); transform: translateX(30px); transition: 0.6s; transition-delay: 1s;}
+.bannerSection .banner .swiper-slide-active .kr_ex {-webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); opacity: 1;}
 
 .bannerSection .banner .banner3 {background-size: 1400px; background-position: 40% 50%;}
 .bannerSection .banner .banner3 .txt {padding-left:38%;}
@@ -193,7 +195,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     /* banner */
     .container .bannerSection {width: 89.4446%;}
     .bannerSection .paddingBox {display: block; width:5.2777%;}
-    .bannerSection .banner {height:717px;}
+    .bannerSection .banner {height:70vh; min-height: 460px;}
     .bannerSection .banner .banner1 {background-position: center;}
     .bannerSection .banner .banner2 {background-position:center;}
     .bannerSection .banner .banner3 {background-size: cover; background-position: center;}
@@ -204,7 +206,7 @@ html.activeM .mask {opacity: 0.5; visibility: visible;}
     .bannerSection .banner .txt p {font-size: 16px; padding-left:0.4%;}
     .bannerSection .banner .txt h2 {font-size: 2.5rem; padding-bottom: 10px;}
     .bannerSection .banner .txt .bn_explain {display: block; color:#000; font-weight: 600; text-transform: capitalize; margin-bottom:44px;}
-    .bannerSection .banner .txt .kr_ex {margin-bottom: 55px;}
+    .bannerSection .banner .txt .kr_ex {margin-bottom: 35px;}
     .bannerSection .banner .banner3 {justify-content: flex-end;}
     .bannerSection .banner .banner3 .txt {width: 26.7879%; padding-right:15%; padding-left:0;}
 

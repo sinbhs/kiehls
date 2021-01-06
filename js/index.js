@@ -66,14 +66,14 @@ $(function(){
 
     //메인 배너 banner swiper
     var swiper = new Swiper('.swiper-container',{
-        autoplay: {delay:3000},//자동 슬라이드
+        autoplay: {delay:5000},//자동 슬라이드
         pagination: {el: '.swiper-pagination', type: 'bullets', clickable :true},
         loop: true,
         //Reponsive breakpoints
         breakpoints: {
             //when window width is >= 1300
             1300: {
-                speed:2000//슬라이드 넘기는 스피드
+                speed:1000//슬라이드 넘기는 스피드
             }
         }
     })
@@ -83,7 +83,6 @@ $(function(){
         swiper.slideToLoop(i);
         swiper.autoplay.start();
     });
-    
 
     //베스트 셀러 scroll swiper
     var scroll = new Swiper('.scroll_container',{
